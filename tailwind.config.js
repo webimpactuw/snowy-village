@@ -12,7 +12,10 @@ const colorNames = {
 };
 
 export default {
-  content: ["./pages/**/*.{html,js}", "./components/**/*.{html,js}"],
+  content: [
+    "./src/pages/**/*.{html,js,ts,tsx}",
+    "./src/components/**/*.{html,js,ts,tsx}",
+  ],
   theme: {
     extend: {},
     colors: {
