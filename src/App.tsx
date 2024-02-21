@@ -22,7 +22,7 @@ function App() {
       <Route path="/menu" element={<Menu />}/>
       
       <Route path="/history" element={<History />}/>
-      <Route path="/Locations" element={<Locations />}/>
+      <Route path="/locations" element={<Locations />}/> 
     </Routes>
   )
 }
