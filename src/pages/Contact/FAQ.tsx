@@ -1,3 +1,3 @@
-export function FAQ() {
-    return <h1>FAQ</h1>
+export default function FAQ() {
+  return <h1>FAQ</h1>;
 }
