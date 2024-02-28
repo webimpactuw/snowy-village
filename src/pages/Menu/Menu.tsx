@@ -1,3 +1,13 @@
+import OrderOnline from "./OrderOnline";
+import Promotions from "./Promotions";
+import MenuItem from "../../components/MenuItem";
+
 export default function Menu() {
-  return <h1>Menu</h1>;
+  return (
+    <>
+      <OrderOnline />
+      <Promotions />
+      <MenuItem />
+    </>
+  );
 }
