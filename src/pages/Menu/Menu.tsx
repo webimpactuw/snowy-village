@@ -1,5 +1,6 @@
 import OrderOnline from "./OrderOnline";
 import Promotions from "./Promotions";
+import MenuBlock from "../../components/MenuBlock";
 import MenuItem from "../../components/MenuItem";
 
 export default function Menu() {
@@ -7,7 +8,9 @@ export default function Menu() {
     <>
       <OrderOnline />
       <Promotions />
-      <MenuItem />
+      <MenuBlock title="Bingsoo">
+        <MenuItem />
+      </MenuBlock>
     </>
   );
 }
