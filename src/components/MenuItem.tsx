@@ -1,7 +1,19 @@
-function MenuItem() {
+function MenuItem({
+  imgFileName,
+  name,
+  price,
+  description,
+}: {
+  imgFileName: string;
+  name: string;
+  price: number;
+  description: string;
+}) {
   return (
     <div>
-      <h1>Menu Item</h1>
+      <img src={imgFileName} alt={name} />
+      <h2>{name + " | " + price}</h2>
+      <p>{description}</p>
     </div>
   );
 }
