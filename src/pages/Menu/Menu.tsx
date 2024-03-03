@@ -1,6 +1,6 @@
 import OrderOnline from "./OrderOnline";
-import MenuBlock from "../../components/MenuBlock";
-import MenuItem from "../../components/MenuItem";
+import MenuBlock from "./MenuBlock";
+import MenuItem from "./MenuItem";
 
 export default function Menu() {
   return (
