@@ -3,9 +3,14 @@ import MenuBlock from "./MenuBlock";
 import MenuItem from "./MenuItem";
 
 export default function Menu() {
+  // Replace OrderOnline link with Snowy Village's Doordash link
   return (
     <div className="grid grid-cols-1">
-      <OrderOnline />
+      <OrderOnline
+        imgFileName="doordash_logo"
+        companyName="Doordash"
+        link="https://www.doordash.com/"
+      />
       <MenuBlock title="Bingsoo">
         <MenuItem
           imgFileName="test_lookout.jpg"
