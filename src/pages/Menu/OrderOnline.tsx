@@ -9,9 +9,9 @@ function OrderOnline({
 }) {
   return (
     <div className="m-auto w-1/6">
-      <a href={link} className="rounded-xl grid grid-cols-2">
-        <img src={imgFileName} alt={companyName + " Logo"} className="w-1/4" />
-        <button className="bg-highlight-color text-text-color-2">
+      <a href={link} className="rounded-xl grid grid-cols-2 w-full">
+        <img src={imgFileName} alt={companyName + " Logo"} className="" />
+        <button className="bg-highlight-color text-text-color-2 text-lg">
           Order Online with {companyName}
         </button>
       </a>
