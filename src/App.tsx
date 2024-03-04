@@ -14,20 +14,23 @@ import Contact from "./pages/Contact/Contact";
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
-
-        <Route path="/gallery" element={<Gallery />} />
-        <Route path="/menu" element={<Menu />} />
-
-        <Route path="/history" element={<History />} />
-        <Route path="/locations" element={<Locations />} />
-        <Route path="*" element={<Home />}></Route>
-        <Route path="*" element={<Home />}></Route>
-      </Routes>
 
       <Navbar/>
+      <div className="my-8">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/faq" element={<FAQ />} />
+          <Route path="/collab" element={<Collab />} />
+          <Route path="/hiring" element={<Hiring />} />
+
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/menu" element={<Menu />} />
+
+          <Route path="/history" element={<History />} />
+          <Route path="/locations" element={<Locations />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </div>
     </>
   );
 }
