@@ -1,7 +1,4 @@
 import Home from "./pages/Home/Home";
-// import FAQ from "./pages/Contact/FAQ";
-// import Collab from "./pages/Contact/Contact";
-// import Hiring from "./pages/Contact/Hiring";
 import Gallery from "./pages/Gallery/Gallery";
 import Menu from "./pages/Menu/Menu";
 import History from "./pages/AboutUs/History";
@@ -28,6 +25,22 @@ function App() {
       </Routes>
 
       <Navbar/>
+<<<<<<< Updated upstream
+=======
+      <div className="my-8">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/contact" element={<Contact />} />
+
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/menu" element={<Menu />} />
+
+          <Route path="/history" element={<History />} />
+          <Route path="/locations" element={<Locations />} />
+          <Route path="*" element={<Home />} />
+        </Routes>
+      </div>
+>>>>>>> Stashed changes
     </>
   );
 }
