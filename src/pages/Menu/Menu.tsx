@@ -2,6 +2,7 @@ import OrderOnline from "./OrderOnline";
 import MenuBlock from "./MenuBlock";
 import MenuItem from "./MenuItem";
 import OrderButton from "./OrderButton";
+import menuData from "./menu-data.json";
 
 export default function Menu() {
   // Replace OrderOnline link with Snowy Village's Doordash link
@@ -24,56 +25,13 @@ export default function Menu() {
           link="https://www.doordash.com"
         />
       </OrderOnline>
-      <MenuBlock title="Bingsoo">
-        <MenuItem
-          imgFileName="test_lookout.jpg"
-          name="Test Item"
-          price="1.00"
-          description={`This is a test item. Not for sale. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}
-        />
-        <MenuItem
-          imgFileName="test_lookout.jpg"
-          name="Test Item"
-          price="1.00"
-          description={`This is a test item. Not for sale. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}
-        />
-        <MenuItem
-          imgFileName="test_lookout.jpg"
-          name="Test Item"
-          price="1.00"
-          description={`This is a test item. Not for sale. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}
-        />
-        <MenuItem
-          imgFileName="test_lookout.jpg"
-          name="Test Item"
-          price="1.00"
-          description={`This is a test item. Not for sale. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}
-        />
-        <MenuItem
-          imgFileName="test_lookout.jpg"
-          name="Test Item"
-          price="1.00"
-          description={`This is a test item. Not for sale. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}
-        />
-        <MenuItem
-          imgFileName="test_lookout.jpg"
-          name="Test Item"
-          price="1.00"
-          description={`This is a test item. Not for sale. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}
-        />
-        <MenuItem
-          imgFileName="test_lookout.jpg"
-          name="Test Item"
-          price="1.00"
-          description={`This is a test item. Not for sale. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}
-        />
-        <MenuItem
-          imgFileName="test_lookout.jpg"
-          name="Test Item"
-          price="1.00"
-          description={`This is a test item. Not for sale. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.`}
-        />
-      </MenuBlock>
+      {menuData.sections.map((section) => (
+        <MenuBlock title={section.name}>
+          {section.items.map((item) => (
+            <MenuItem {...item} />
+          ))}
+        </MenuBlock>
+      ))}
     </div>
   );
 }
