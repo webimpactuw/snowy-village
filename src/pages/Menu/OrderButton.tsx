@@ -1,15 +1,15 @@
 function OrderButton({
   imgFileName,
   companyName,
-  link,
+  url,
 }: {
   imgFileName: string;
   companyName: string;
-  link: string;
+  url: string;
 }) {
   return (
     <div className="bg-white w-1/4 aspect-square m-auto rounded-lg">
-      <a href={link} className="grid justify-center w-full h-full">
+      <a href={url} className="grid justify-center w-full h-full">
         <img
           src={imgFileName}
           alt={companyName + " Logo"}
