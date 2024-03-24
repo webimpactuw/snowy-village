@@ -19,9 +19,9 @@ function App() {
       <div className="my-8">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/faq" element={<FAQ />} />
+          {/* <Route path="/faq" element={<FAQ />} />
           <Route path="/collab" element={<Collab />} />
-          <Route path="/hiring" element={<Hiring />} />
+          <Route path="/hiring" element={<Hiring />} /> */}
 
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/menu" element={<Menu />} />
