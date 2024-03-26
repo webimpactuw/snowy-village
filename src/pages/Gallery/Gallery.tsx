@@ -10,13 +10,15 @@ const images = [
 
 ];
 
-function App() {
+function Gallery() {
   return (
+
     <div className="bg-background-color pb-20">
       <Header />
       <GalleryGrid images={images} />
     </div>
+
   );
 }
 
-export default App;
+export default Gallery;
