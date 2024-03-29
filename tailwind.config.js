@@ -5,7 +5,7 @@ const colorNames = {
   faded_blue: "#97c5d6",
   grey: "#536271",
   green_grey: "#738b86",
-  ice_blue: "#b1e5f2",
+  ice_blue: "#E6EFF8",
   white: "#ebebeb",
   sage_green: "#4b6858",
   dark_green: "#3c4b34",
