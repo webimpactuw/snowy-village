@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="bg-background-color fixed top-0 flex justify-between items-center h-2/10 mx-auto w-full px-4 rounded border-black">
+      <div className="bg-dark-navy fixed top-0 flex justify-between items-center mx-auto w-full px-4 rounded border-black text-white">
         <h1 className="text-2xl w-full">Snowy Village</h1>
         <ul className="hidden md:flex">
           <li><Link to="/" className="p-4">Home</Link></li>
@@ -28,7 +28,7 @@ function Navbar() {
       
       <div className={isSidebarOpen ? "fixed left-0 top-0 h-full w-[80%] border-r border-r-gray-900 bg-background-color" : "fixed hidden"}>
         <div className="m-10">
-          <h1 className="text-2xl w-full pb-3">Snowy Village</h1>
+          {/* <h1 className="text-2xl w-full pb-3">Snowy Village</h1> */}
           <ul className="uppercase text-md">
             <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/" onClick={sideNavClicked}>Home</Link></li>
             <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/menu" onClick={sideNavClicked}>Menu</Link></li>
