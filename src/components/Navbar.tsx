@@ -12,7 +12,8 @@ function Navbar() {
 
   return (
     <>
-      <div className="bg-dark-navy fixed top-0 flex justify-between items-center mx-auto w-full px-4 rounded border-black text-white z-50">
+      <div className="bg-dark-navy h-10 sticky top-0 left-0 flex
+          justify-between items-center mx-auto w-full px-4 rounded border-black text-white z-50">
         <h1 className="text-2xl w-full">Snowy Village</h1>
         <ul className="hidden md:flex">
           <li><Link to="/" className="p-4">Home</Link></li>
