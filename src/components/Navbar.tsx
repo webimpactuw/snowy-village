@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="bg-background-color fixed top-0 flex justify-between items-center h-2/10 mx-auto w-full px-4 rounded border-black">
+      <div className="bg-background-color fixed top-0 flex justify-between items-center h-2/10 mx-auto w-full px-4 rounded border-black z-50">
         <h1 className="text-2xl w-full">Snowy Village</h1>
         <ul className="hidden md:flex">
           <li><Link to="/" className="p-4">Home</Link></li>
