@@ -11,9 +11,7 @@ export default function Contact() {
 
     <h1>FAQ</h1>
 
-    <p>
-    
-    </p>
+    <SampleText />
 
     <h1>Collab</h1>
 
