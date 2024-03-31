@@ -26,7 +26,7 @@ function Navbar() {
         </div>
       </div>
       
-      <div className={isSidebarOpen ? "fixed left-0 top-0 h-full w-full border-r border-r-gray-900 bg-background-color z-[9999]" : "fixed hidden"}>
+      <div className={isSidebarOpen ? "fixed left-0 top-0 h-full w-[80%] border-r border-r-gray-900 bg-background-color" : "fixed hidden"}>
         <div className="m-10">
           <ul className="uppercase text-lg">
             <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/" onClick={sideNavClicked}>Home</Link></li>
