@@ -35,6 +35,12 @@ export default {
         "dark-green": colorNames.dark_green,
         "dark-blue": colorNames.dark_blue,
       },
+      fontFamily: {
+        "fjalla-one": ["Fjalla One", "sans-serif"],
+      },
+      fontSize: {
+        "2xs": "0.625rem",
+      },
     },
   },
   plugins: [],
