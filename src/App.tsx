@@ -11,9 +11,9 @@ import Contact from "./pages/Contact/Contact";
 function App() {
   return (
     <>
-
       <Navbar/>
-      <div className="my-8">
+      
+      <div>
         <Routes>
           <Route path="/" element={<Home />} />
 
