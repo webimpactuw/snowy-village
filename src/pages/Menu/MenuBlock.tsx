@@ -1,22 +1,26 @@
-import React from "react";
+import ItemData from "./ItemData";
+import MenuItem from "./MenuItem";
 
-function MenuBlock({
-  children,
-  title,
+export default function MenuBlock({
+  name,
+  blockData,
 }: {
-  children: React.ReactNode;
-  title: string;
+  name: string;
+  blockData: Array<ItemData>;
 }) {
   return (
-    <>
-      <div className="m-auto w-11/12 md:w-5/6 lg:w-3/4 grid grid-cols:2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8 md:gap-12 lg:gap-16">
-        <h2 className="w-1/3 sm:w-1/4 md:w-1/5 lg:w-1/6 m-auto text-center col-span-2 md:col-span-3 lg:col-span-4 text-4xl font-bold text-text-color-1 border-b-4 border-text-color-1">
-          {title}
-        </h2>
-        {children}
+    <div className="grid">
+      <h2 className="text-center font-fjalla-one tracking-wider text-4xl text-[#bc9a6c]">
+        {name}
+      </h2>
+      <h3 className="text-center font-fjalla-one text-3xs tracking-widest">
+        (single | regular | large)
+      </h3>
+      <div className="grid grid-cols-2 px-8 py-4 gap-x-12 gap-y-6">
+        {blockData.map((item) => (
+          <MenuItem itemData={item} />
+        ))}
       </div>
-    </>
+    </div>
   );
 }
-
-export default MenuBlock;

@@ -26,6 +26,15 @@
       "smallPrice": "7.99",
       "mediumPrice": "10.35",
       "largePrice": "13.35"
+    },
+    {
+      "name": "Test3",
+      "img": "bingsoo_test.jpg",
+      "isPopular": false,
+      "containsNuts": true,
+      "smallPrice": "7.99",
+      "mediumPrice": "10.35",
+      "largePrice": "13.35"
     }
   ]
 }
