@@ -2,6 +2,7 @@ import { useState } from "react";
 import EmailForm from "../../components/EmailForm";
 import SampleText from "../../components/SampleText";
 import HeroImage from "./contact.jpg";
+import Navbar from "../../components/Navbar";
 
 export default function Contact() {
 
@@ -19,14 +20,24 @@ export default function Contact() {
   }
 
   return <div className="flex-col items-center">
-    
-    {/* Hero section */}
-    <div className="flex w-full h-25 text-white mx-auto">
-      <img src={HeroImage} className="w-full bg-blend-darken" style={{filter: "brightness(40%)"}}/>
-      <h1 className="font-fjalla-one text-4xl p-3 md:text-6xl fixed left-1/5">CONTACT US</h1>
-      
+
+    <div>
+      <Navbar />
+      <div className="bg-dark-navy p-5 grid justify-center">
+        <h1 className="text-center text-white font-fjalla-one text-4xl md:text-6xl tracking-widest mb-1">
+          CONTACT US
+        </h1>
+      </div>
     </div>
     
+    
+    {/* Hero section */}
+    {/* <div className="flex w-full h-25 text-white mx-auto">
+      <img src={HeroImage} className="w-full bg-blend-darken" style={{filter: "brightness(40%)"}}/>
+      <h1 className="font-fjalla-one text-4xl p-3 md:text-6xl left-1/5">CONTACT US</h1>
+      
+    </div> */}
+
     <div className="flex flex-col w-full p-5">
       <h1>FAQ</h1>
 
