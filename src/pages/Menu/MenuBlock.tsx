@@ -10,9 +10,11 @@ export default function MenuBlock({
 }) {
   return (
     <div className="grid">
-      <h2 className="text-center font-fjalla-one tracking-wider text-4xl text-[#bc9a6c]">
-        {name}
-      </h2>
+      <a id={name}>
+        <h2 className="text-center font-fjalla-one tracking-wider text-4xl text-[#bc9a6c]">
+          {name}
+        </h2>
+      </a>
       <h3 className="text-center font-fjalla-one text-3xs tracking-widest">
         (single | regular | large)
       </h3>

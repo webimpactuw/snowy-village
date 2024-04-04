@@ -3,9 +3,11 @@ export default function MenuHeader() {
     return <p className="text-[#bc9a6c] text-xl">|</p>;
   }
   function MenuLink({ text }: { text: string }) {
-    // add href to page locations
     return (
-      <a className="text-white text-xs text-center tracking-wide hover:underline basis-0 flex-grow">
+      <a
+        href={`#${text}`}
+        className="text-white text-xs text-center tracking-wide hover:underline basis-0 flex-grow"
+      >
         {text}
       </a>
     );
