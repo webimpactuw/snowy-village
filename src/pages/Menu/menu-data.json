@@ -1,62 +1,113 @@
 {
-  "menuSections": [
+  "bingsoo": [{
+    "name": "Test1",
+    "img": "bingsoo_test.jpg",
+    "isPopular": true,
+    "containsNuts": false,
+    "smallPrice": "7.99",
+    "mediumPrice": "10.35",
+    "largePrice": "13.35"
+    },
     {
-      "name": "Bingsoo",
-      "items": [
-        {
-          "name": "Test Item",
-          "imgFileName": "test_lookout.jpg",
-          "price": "1.00",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        },
-        {
-          "name": "Test Item",
-          "imgFileName": "test_lookout.jpg",
-          "price": "1.00",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        },
-        {
-          "name": "Test Item",
-          "imgFileName": "test_lookout.jpg",
-          "price": "1.00",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        },
-        {
-          "name": "Test Item",
-          "imgFileName": "test_lookout.jpg",
-          "price": "1.00",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        },
-        {
-          "name": "Test Item",
-          "imgFileName": "test_lookout.jpg",
-          "price": "1.00",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        },
-        {
-          "name": "Test Item",
-          "imgFileName": "test_lookout.jpg",
-          "price": "1.00",
-          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        }
-      ]
+      "name": "Test2",
+      "img": "bingsoo_test.jpg",
+      "isPopular": false,
+      "containsNuts": false,
+      "smallPrice": "7.99",
+      "mediumPrice": "10.35",
+      "largePrice": "13.35"
+    },
+    {
+      "name": "Test3",
+      "img": "bingsoo_test.jpg",
+      "isPopular": true,
+      "containsNuts": true,
+      "smallPrice": "7.99",
+      "mediumPrice": "10.35",
+      "largePrice": "13.35"
+    },
+    {
+      "name": "Test3",
+      "img": "bingsoo_test.jpg",
+      "isPopular": false,
+      "containsNuts": true,
+      "smallPrice": "7.99",
+      "mediumPrice": "10.35",
+      "largePrice": "13.35"
     }
   ],
-  "onlineOrderButtons": [
-    {
-      "companyName": "Doordash",
-      "imgFileName": "doordash_logo.jpg",
-      "url": "https://www.doordash.com"
+  "taiyaki": [{
+    "name": "Test1",
+    "img": "bingsoo_test.jpg",
+    "isPopular": true,
+    "containsNuts": false,
+    "smallPrice": "7.99",
+    "mediumPrice": "10.35",
+    "largePrice": "13.35"
     },
     {
-      "companyName": "Doordash",
-      "imgFileName": "doordash_logo.jpg",
-      "url": "https://www.doordash.com"
+      "name": "Test2",
+      "img": "bingsoo_test.jpg",
+      "isPopular": false,
+      "containsNuts": false,
+      "smallPrice": "7.99",
+      "mediumPrice": "10.35",
+      "largePrice": "13.35"
     },
     {
-      "companyName": "Doordash",
-      "imgFileName": "doordash_logo.jpg",
-      "url": "https://www.doordash.com"
+      "name": "Test3",
+      "img": "bingsoo_test.jpg",
+      "isPopular": true,
+      "containsNuts": true,
+      "smallPrice": "7.99",
+      "mediumPrice": "10.35",
+      "largePrice": "13.35"
+    },
+    {
+      "name": "Test3",
+      "img": "bingsoo_test.jpg",
+      "isPopular": false,
+      "containsNuts": true,
+      "smallPrice": "7.99",
+      "mediumPrice": "10.35",
+      "largePrice": "13.35"
+    }
+  ],
+  "drinks": [{
+    "name": "Test1",
+    "img": "bingsoo_test.jpg",
+    "isPopular": true,
+    "containsNuts": false,
+    "smallPrice": "7.99",
+    "mediumPrice": "10.35",
+    "largePrice": "13.35"
+    },
+    {
+      "name": "Test2",
+      "img": "bingsoo_test.jpg",
+      "isPopular": false,
+      "containsNuts": false,
+      "smallPrice": "7.99",
+      "mediumPrice": "10.35",
+      "largePrice": "13.35"
+    },
+    {
+      "name": "Test3",
+      "img": "bingsoo_test.jpg",
+      "isPopular": true,
+      "containsNuts": true,
+      "smallPrice": "7.99",
+      "mediumPrice": "10.35",
+      "largePrice": "13.35"
+    },
+    {
+      "name": "Test3",
+      "img": "bingsoo_test.jpg",
+      "isPopular": false,
+      "containsNuts": true,
+      "smallPrice": "7.99",
+      "mediumPrice": "10.35",
+      "largePrice": "13.35"
     }
   ]
 }
