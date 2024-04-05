@@ -20,7 +20,7 @@ export default function EmailForm() {
     // Function: sends email. If any field is empty, refuse to send.
     const sendEmail = (): void => {
 
-      if(name.trim() == "" || email.trim() == "" || message.trim() == "") {
+      if(name.trim() === "" || email.trim() === "" || message.trim() === "") {
         alert("Please fill out all text boxes.");
         console.log("Did not send because a field was non empty"); // also use regex for the email part
         return;
