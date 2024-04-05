@@ -24,9 +24,9 @@ function Navbar() {
     <>
         <div className={isSidebarOpen ? "hidden" : "sticky top-0 flex z-40 bg-dark-navy text-white py-1 px-4"}>
           <div className="sticky top-0 flex justify-between items-center mx-auto w-full border-black">
-            <h1 className="sm:hidden md:text-2xl w-full">Snowy Village</h1>
+            {/* <h1 className="sm:hidden md:text-2xl w-full">Snowy Village</h1> */}
             <ul className="hidden md:flex">
-              <li><Link to="/" className="p-4">Home</Link></li>
+              <li className="text-xl"><Link to="/" className="p-4 text-xl">Home</Link></li>
               <li><Link to="/menu" className="p-4">Menu</Link></li>
               <li><Link to="/gallery" className="p-4">Gallery</Link></li>
               <li><Link to="/contact" className="p-4">Contact</Link></li>
@@ -38,7 +38,8 @@ function Navbar() {
           </div>
         </div>
       
-      <div className={isSidebarOpen ? "z-50 absolute left-0 top-0 h-full w-full border-r border-r-gray-900 bg-background-color" : "fixed hidden"}>
+      <div className={`ease-in-out duration-300
+          ${isSidebarOpen ? "z-50 absolute left-0 top-0 h-full w-full border-r border-r-gray-900 bg-background-color translate-x-0" : "translate-x-full fixed hidden"}`}>
         <div className="m-10">
           <ul className="uppercase text-lg">
             <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/" onClick={sideNavClicked}>Home</Link></li>
