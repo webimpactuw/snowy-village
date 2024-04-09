@@ -1,6 +1,8 @@
 import { useState } from "react";
 import EmailForm from "../../components/EmailForm";
 import SampleText from "../../components/SampleText";
+import HiringImage from "./Hiring.jpg";
+import CollabImage from "./Collab.jpg";
 
 export default function Contact() {
 
@@ -21,23 +23,30 @@ export default function Contact() {
 
     <div>
       <div className="bg-dark-navy p-5 grid justify-center">
-        <h1 className="text-center text-white font-fjalla-one text-4xl md:text-6xl tracking-widest mb-1">
+        <h1 className="text-center text-white font-fjalla-one text-5xl md:text-6xl tracking-widest mb-1">
           CONTACT US
         </h1>
       </div>
     </div>
 
     <div className="flex flex-col w-full p-5">
-      <h1>FAQ</h1>
+      
 
-      <div>
-        <SampleText />
+      <div className="flex">
+        <img src={HiringImage} className="w-1/2"/>
+        <div className="p-3">
+          <h1>We're Hiring!</h1>
+          <p>Let’s make some sweets, and spread the joys around us. Come join our Village!</p>
+        </div>
       </div>
-  
+
+      <p>Want to gain experience with making amazing desserts? We're looking for...</p>
+      <button>Apply Now</button>
     </div>
 
     <div className="flex flex-col w-full p-5 bg-dark-navy text-white">
       <h1>Collab</h1>
+      <img src={CollabImage} className="w-1/2"/>
       <SampleText />
 
       <div className="mt-3 mb-3">
@@ -54,6 +63,15 @@ export default function Contact() {
       
     </div>
 
+    <div className="flex flex-col w-full p-5">
+      <h1>FAQ</h1>
+
+      <div>
+        <SampleText />
+      </div>
+  
+    </div>
+
     <div className="flex-col">
       <h1>Location</h1>
 
@@ -61,8 +79,6 @@ export default function Contact() {
 
       Address: 5264 University Way NE, Seattle, WA 98105
       </div>
-
-      {/* <iframe src={location} className="w-full aspect-square md:w-1/3"></iframe> */}
     </div>
 
   </div>;
