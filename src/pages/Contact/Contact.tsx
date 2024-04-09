@@ -19,7 +19,7 @@ export default function Contact() {
     setShowForm(!showForm);
   }
 
-  return <div className="flex-col items-center">
+  return <div className="flex-col items-center bg-ice-blue">
 
     <div>
       <div className="bg-dark-navy p-5 grid justify-center">
