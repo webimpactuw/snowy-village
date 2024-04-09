@@ -22,7 +22,7 @@ export default function Contact() {
   return <div className="flex-col items-center bg-ice-blue">
 
     <div>
-      <div className="bg-dark-navy p-5 grid justify-center">
+      <div className="bg-dark-blue p-5 grid justify-center">
         <h1 className="text-center text-white font-fjalla-one text-5xl md:text-6xl tracking-widest mb-1">
           CONTACT US
         </h1>
