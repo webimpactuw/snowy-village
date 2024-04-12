@@ -1,6 +1,8 @@
 import { useState } from "react";
 import EmailForm from "../../components/EmailForm";
 import SampleText from "../../components/SampleText";
+import HiringImage from "./Hiring.jpg";
+import CollabImage from "./Collab.jpg";
 
 export default function Contact() {
 
@@ -17,53 +19,62 @@ export default function Contact() {
     setShowForm(!showForm);
   }
 
-  return <div className="flex-col items-center">
+  return <div className="flex-col items-center bg-ice-blue">
 
-    <div>
-      <div className="bg-dark-navy p-5 grid justify-center">
-        <h1 className="text-center text-white font-fjalla-one text-4xl md:text-6xl tracking-widest mb-1">
+      <div className="bg-dark-blue p-5 grid justify-center">
+        <h1 className="text-center text-white font-fjalla-one text-5xl md:text-6xl tracking-widest mb-1">
           CONTACT US
         </h1>
       </div>
-    </div>
 
-    <div className="flex flex-col w-full p-5">
-      <h1>FAQ</h1>
+      <div className="flex flex-col w-full md:pl-[20%] md:pr-[20%] md:p-8">
+        <div className="flex">
+          <img src={HiringImage} className="w-1/2 p-3"/>
+          <div className="p-3">
+            <h1 className="text-bold">We're Hiring!</h1>
+            <p>Let’s make some sweets, and spread the joys around us. Come join our Village!</p>
+          </div>
+        </div>
 
-      <div>
+        <p>Want to gain experience with making amazing desserts? We're looking for...</p>
+        <button>Apply Now</button>
+      </div>
+
+      <div className="flex flex-col w-full p-5 bg-dark-blue text-white md:pl-[20%] md:pr-[20%] md:p-8">
+        <h1>Collab</h1>
+        <img src={CollabImage} className="w-1/2 p-3"/>
         <SampleText />
-      </div>
-  
-    </div>
 
-    <div className="flex flex-col w-full p-5 bg-dark-navy text-white">
-      <h1>Collab</h1>
-      <SampleText />
+        <div className="mt-3 mb-3">
+          <button type="button"
+            className={showForm ? "w-full rounded p-2 bg-gray-600" : "rounded p-2 bg-sage-green w-full"}
+            onClick={toggleForm}>
+            Toggle Contact Form
+          </button>
+        </div>
+        
+        <div className={showForm ? "" : "hidden"}>
+          <EmailForm />
+        </div>
 
-      <div className="mt-3 mb-3">
-        <button type="button"
-          className={showForm ? "w-full rounded p-2 bg-gray-600" : "rounded p-2 bg-sage-green w-full"}
-          onClick={toggleForm}>
-          Toggle Contact Form
-        </button>
       </div>
+
+      <div className="flex flex-col w-full p-5 bg-ice-blue md:pl-[20%] md:pr-[20%] md:p-8">
+          <h1>FAQ</h1>
+          <div>
+            <SampleText />
+          </div>
+      </div>
+        
+      {/* <div className="flex-col bg-dark-blue md:pl-[20%] md:pr-[20%] text-white">
+        <h1>Location</h1>
+
+        <div>
+
+        Address: 5264 University Way NE, Seattle, WA 98105
+        </div>
+      </div> */}
       
-      <div className={showForm ? "" : "hidden"}>
-        <EmailForm />
-      </div>
-      
     </div>
-
-    <div className="flex-col">
-      <h1>Location</h1>
-
-      <div>
-
-      Address: 5264 University Way NE, Seattle, WA 98105
-      </div>
-
-      {/* <iframe src={location} className="w-full aspect-square md:w-1/3"></iframe> */}
-    </div>
-
-  </div>;
+    ;
 }
