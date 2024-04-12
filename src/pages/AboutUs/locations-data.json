@@ -1,0 +1,32 @@
+{
+  "locations": [
+    {
+      "name": "SEATTLE",
+      "img": "seattle.jpg",
+      "address": "5264 University Way NE, Seattle, WA 98105",
+      "days": ["Mon - Thur", "Friday", "Saturday", "Sunday"],
+      "hours": ["3-9:45 PM", "3-10:45 PM", "1-10:45 PM", "1-9:45 PM"]
+    },
+    {
+      "name": "BELLEVUE",
+      "img": "bellevue.jpg",
+      "address": "1075 Bellevue Way NE B1, Bellevue, WA 98004",
+      "days": ["Mon - Thur", "Friday", "Saturday", "Sunday"],
+      "hours": ["3-9:45 PM", "3-10:45 PM", "1-10:45 PM", "1-9:45 PM"]
+    },
+    {
+      "name": "PORTLAND",
+      "img": "portland.jpg",
+      "address": "3912 N Vancouver Ave #105, Portland, OR 97227",
+      "days": ["Mon - Thur", "Friday", "Saturday", "Sunday"],
+      "hours": ["3-9:45 PM", "3-10:45 PM", "1-10:45 PM", "1-9:45 PM"]
+    },
+    {
+      "name": "FEDERAL WAY",
+      "img": "federalway.jpg",
+      "address": "COMING SOON",
+      "days": ["COMING SOON"],
+      "hours": ["COMING SOON"]
+    }
+  ]
+}

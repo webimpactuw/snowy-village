@@ -11,15 +11,14 @@ import Contact from "./pages/Contact/Contact";
 function App() {
   return (
     <>
-
-      <Navbar/>
+      <Navbar />
       <div className="my-8">
         <Routes>
           <Route path="/" element={<Home />} />
 
           {/* <Route path="/faq" element={<FAQ />} />
           <Route path="/collab" element={<Collab />} />
-  <Route path="/hiring" element={<Hiring />} /> */ }
+  <Route path="/hiring" element={<Hiring />} /> */}
 
           <Route path="/contact" element={<Contact />} />
 
