@@ -23,13 +23,14 @@ function Navbar() {
   return (
     <>
         <div className={isSidebarOpen ? "hidden" : "sticky top-0 flex z-40 bg-dark-navy text-white py-1 px-4"}>
-          <div className="sticky top-0 flex justify-between items-center mx-auto w-full border-black">
+          <div className="sticky top-0 flex md:items-center mx-auto w-full border-black">
             {/* <h1 className="sm:hidden md:text-2xl w-full">Snowy Village</h1> */}
             <ul className="hidden md:flex">
               <li className="text-xl"><Link to="/" className="p-4 text-xl">Home</Link></li>
               <li><Link to="/menu" className="p-4">Menu</Link></li>
               <li><Link to="/gallery" className="p-4">Gallery</Link></li>
               <li><Link to="/contact" className="p-4">Contact</Link></li>
+              <li><Link to="/aboutus" className="p-4">About Us</Link></li>
             </ul>
 
             <div onClick={sideNavClicked} className="md:hidden top-2 right-1">
@@ -46,6 +47,7 @@ function Navbar() {
             <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/menu" onClick={sideNavClicked}>Menu</Link></li>
             <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/gallery" onClick={sideNavClicked}>Gallery</Link></li>
             <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/contact" onClick={sideNavClicked}>Contact</Link></li>
+            <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/aboutus" onClick={sideNavClicked}>About Us</Link></li>
           </ul>
         </div>
 
