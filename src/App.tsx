@@ -7,16 +7,21 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact/Contact";
+import About from "./pages/AboutUs/About";
 
 function App() {
   return (
     <>
-    
       <Navbar/>
+      
       <div>
-        
         <Routes>
           <Route path="/" element={<Home />} />
+
+          {/* <Route path="/faq" element={<FAQ />} />
+          <Route path="/collab" element={<Collab />} />
+  <Route path="/hiring" element={<Hiring />} /> */ }
+
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/gallery" element={<Gallery />} />
@@ -25,6 +30,7 @@ function App() {
           <Route path="/history" element={<History />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="*" element={<Home />} />
+          <Route path="/aboutus" element={<About />}/>
         </Routes>
       </div>
     </>

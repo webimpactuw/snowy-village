@@ -1,26 +1,21 @@
-function MenuItem({
-  imgFileName,
-  name,
-  price,
-  description,
-}: {
-  imgFileName: string;
-  name: string;
-  price: string;
-  description: string;
-}) {
+import HeartSVG from "./HeartSVG";
+import NutSVG from "./NutSVG";
+import ItemData from "./ItemData";
+
+export default function MenuItem({ itemData }: { itemData: ItemData }) {
   return (
-    <div>
-      <img className="rounded-t-xl" src={imgFileName} alt={name} />
-      <div className="grid grid-cols-2 content-around aspect-square">
-        <h3 className="text-center">{name}</h3>
-        <h3 className="text-center">{price}</h3>
-        <p className="col-span-2 overflow-scroll md:overflow-hidden hover:overflow-visible">
-          {description}
+    <div className="grid">
+      <img src={itemData.img} alt={itemData.name} />
+      <div className="grid grid-flow-col justify-center gap-2 items-center p-1">
+        <p className="font-fjalla-one text-sm tracking-wider text-dark-navy">
+          {itemData.name}
         </p>
+        {itemData.isPopular && <HeartSVG width="3" />}
+        {itemData.containsNuts && <NutSVG width="3" />}
       </div>
+      <p className="text-center text-xs font-thin mb-1">
+        {itemData.smallPrice} | {itemData.mediumPrice} | {itemData.largePrice}
+      </p>
     </div>
   );
 }
-
-export default MenuItem;
