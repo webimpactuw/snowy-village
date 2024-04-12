@@ -37,6 +37,8 @@ export default {
       },
       fontFamily: {
         "fjalla-one": ["Fjalla One", "sans-serif"],
+        "inria-sans": ["inria-sans", "sans-serif"],
+        "ibm-plex-sans": ["ibm-plex-sans", "sans-serif"]
       },
       fontSize: {
         "2xs": "0.625rem",
