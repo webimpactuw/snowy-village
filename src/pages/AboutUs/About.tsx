@@ -8,7 +8,7 @@ export default function About() {
       <h1 className="text-text-color-2 font-fjalla-one text-3xl text-center">ABOUT US</h1>
     </div>
 
-    <div className="container mx-auto h-120 w-auto px-20 py-10 bg-white">
+    <div className="container mx-auto h-120 w-auto md:px-20 sm:px-10 py-10 bg-white">
       <div className="container bg-white pb-10">
         <h1 className="text-dark-blue font-fjalla-one text-3xl text-center">OUR TEAM</h1>
       </div>
@@ -27,7 +27,7 @@ export default function About() {
       </div>
     </div>
     
-    <div className="container mx-auto h-120 w-auto py-10 px-20 bg-dark-blue">
+    <div className="container mx-auto h-120 w-auto py-10 sm:px-10 md:px-20 bg-dark-blue">
       <div className="container bg-dark-blue pb-10">
         <h1 className="text-text-color-2 font-fjalla-one text-3xl text-center">OUR STORY</h1>
       </div>
