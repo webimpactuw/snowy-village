@@ -7,12 +7,14 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact/Contact";
+import About from "./pages/AboutUs/About";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <div className="my-8">
+      <Navbar/>
+      
+      <div>
         <Routes>
           <Route path="/" element={<Home />} />
 
@@ -28,6 +30,7 @@ function App() {
           <Route path="/history" element={<History />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="*" element={<Home />} />
+          <Route path="/aboutus" element={<About />}/>
         </Routes>
       </div>
     </>

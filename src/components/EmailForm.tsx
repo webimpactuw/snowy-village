@@ -17,11 +17,17 @@ export default function EmailForm() {
       message: message,
     }
     
+    // Function: sends email. If any field is empty, refuse to send.
     const sendEmail = (): void => {
+
+      if(name.trim() === "" || email.trim() === "" || message.trim() === "") {
+        alert("Please fill out all text boxes.");
+        console.log("Did not send because a field was non empty"); // also use regex for the email part
+        return;
+      }
 
       console.log("name is " + templateParams.name + " and email is " + templateParams.email + " and message is " +  templateParams.message);
 
-      // TODO:
       emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, { publicKey: PUBLIC_KEY})
             .then(
               (response) => {
@@ -33,10 +39,8 @@ export default function EmailForm() {
             )
     };
 
-    // TODO: consider getting rid of items-center. This contact form 
-    // isnt fully responsive. padding is too big in mobile screen.
-    return <main className="flex min-h-screen flex-col items-center">
-      <form className="flex flex-col items-center justify-center w-1/2">
+    return <main className="flex flex-col items-center mt-3">
+      <form className="flex flex-col items-center justify-center w-[80%] md:w-1/2 text-black">
         <input
           type="text"
           placeholder="Name"
