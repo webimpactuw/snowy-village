@@ -3,7 +3,4 @@ export default interface ItemData {
   img: string;
   isPopular: boolean;
   containsNuts: boolean;
-  smallPrice: string;
-  mediumPrice: string;
-  largePrice: string;
 }

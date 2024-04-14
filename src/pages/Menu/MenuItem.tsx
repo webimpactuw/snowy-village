@@ -13,9 +13,6 @@ export default function MenuItem({ itemData }: { itemData: ItemData }) {
         {itemData.isPopular && <HeartSVG width="3" />}
         {itemData.containsNuts && <NutSVG width="3" />}
       </div>
-      <p className="text-center text-xs font-thin mb-1">
-        {itemData.smallPrice} | {itemData.mediumPrice} | {itemData.largePrice}
-      </p>
     </div>
   );
 }

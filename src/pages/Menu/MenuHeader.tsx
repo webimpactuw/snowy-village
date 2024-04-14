@@ -51,13 +51,13 @@ export default function MenuHeader() {
         Order on Doordash
       </a>
       <div className="w-screen flex justify-around items-center px-2">
-        <MenuLink text="ADD-ONS" />
+        <MenuLink text="FEATURED" />
         <DividerBar />
         <MenuLink text="BINGSOO" />
         <DividerBar />
-        <MenuLink text="DRINKS" />
-        <DividerBar />
         <MenuLink text="TAIYAKI" />
+        <DividerBar />
+        <MenuLink text="DRINKS" />
       </div>
     </div>
   );
