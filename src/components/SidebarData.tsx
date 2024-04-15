@@ -3,6 +3,12 @@
 // import { RiArrowUpSFill } from "react-icons/ri";
 import { SideNavItem } from "./types";
 
+// return(
+//   {sidebarJsonData.sidebardata.map((sidebar) => {
+    
+//   })}
+// )
+
 export const SIDENAV_ITEMS: SideNavItem[] = [
   {
     title: 'Menu',
