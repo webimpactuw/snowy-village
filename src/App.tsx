@@ -20,7 +20,7 @@ function App() {
 
           {/* <Route path="/faq" element={<FAQ />} />
           <Route path="/collab" element={<Collab />} />
-  <Route path="/hiring" element={<Hiring />} /> */ }
+  <Route path="/hiring" element={<Hiring />} /> */}
 
           <Route path="/contact" element={<Contact />} />
 
