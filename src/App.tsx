@@ -5,9 +5,11 @@ import History from "./pages/AboutUs/History";
 import Locations from "./pages/AboutUs/Locations";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/AboutUs/About";
+// import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
@@ -18,11 +20,10 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
 
-          {/* <Route path="/faq" element={<FAQ />} />
-          <Route path="/collab" element={<Collab />} />
-  <Route path="/hiring" element={<Hiring />} /> */ }
-
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contact/hiring" element={<Contact />} />
+          <Route path="/contact/faq" element={<Contact />} />
+          <Route path="/contact/collab" element={<Contact />} />
 
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/menu" element={<Menu />} />

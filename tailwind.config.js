@@ -10,6 +10,7 @@ const colorNames = {
   sage_green: "#4b6858",
   dark_green: "#3c4b34",
   dark_blue: "#303d55",
+  gold: "#BC9A6C",
 };
 
 export default {
@@ -34,6 +35,7 @@ export default {
         "sage-green": colorNames.sage_green,
         "dark-green": colorNames.dark_green,
         "dark-blue": colorNames.dark_blue,
+        "gold": colorNames.gold,
       },
       fontFamily: {
         "fjalla-one": ["Fjalla One", "sans-serif"],

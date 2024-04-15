@@ -3,6 +3,7 @@ import EmailForm from "../../components/EmailForm";
 import SampleText from "../../components/SampleText";
 import HiringImage from "./Hiring.jpg";
 import CollabImage from "./Collab.jpg";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
 
@@ -27,6 +28,10 @@ export default function Contact() {
         </h1>
       </div>
 
+      <Link to={{
+        pathname: '/contact/hiring'
+      }}/>
+
       <div className="flex flex-col w-full md:pl-[20%] md:pr-[20%] md:p-8">
         <div className="flex">
           <img src={HiringImage} className="w-1/2 p-3"/>
@@ -40,7 +45,10 @@ export default function Contact() {
         <button>Apply Now</button>
       </div>
 
+
+
       <div className="flex flex-col w-full p-5 bg-dark-blue text-white md:pl-[20%] md:pr-[20%] md:p-8">
+        
         <h1>Collab</h1>
         <img src={CollabImage} className="w-1/2 p-3"/>
         <SampleText />
