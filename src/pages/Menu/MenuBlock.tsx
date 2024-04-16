@@ -1,26 +1,37 @@
-import ItemData from "./ItemData";
-import MenuItem from "./MenuItem";
+import menuData from "./menu-data.json";
+import { ImgMenuItem, RegMenuItem } from "./MenuItem";
 
-export default function MenuBlock({
-  name,
-  blockData,
-}: {
-  name: string;
-  blockData: Array<ItemData>;
-}) {
+export function FeaturedMenuBlock() {
+  return (
+    <div className="grid">
+      <span id="FEATURED" className="block h-8 -mt-8 invisible" />
+      <h2 className="text-center font-fjalla-one tracking-wider text-4xl text-[#bc9a6c]">
+        FEATURED
+      </h2>
+      <div className="grid grid-cols-2 px-8 py-4 gap-x-12 gap-y-6">
+        {menuData.items.map((item) =>
+          item.img !== undefined ? <ImgMenuItem itemData={item} /> : false
+        )}
+      </div>
+    </div>
+  );
+}
+
+export function RegularMenuBlock({ name }: { name: string }) {
   return (
     <div className="grid">
       <span id={name} className="block h-8 -mt-8 invisible" />
       <h2 className="text-center font-fjalla-one tracking-wider text-4xl text-[#bc9a6c]">
         {name}
       </h2>
-      <h3 className="text-center font-fjalla-one text-3xs tracking-widest">
-        (single | regular | large)
-      </h3>
-      <div className="grid grid-cols-2 px-8 py-4 gap-x-12 gap-y-6">
-        {blockData.map((item) => (
-          <MenuItem itemData={item} />
-        ))}
+      <div className="grid px-24 py-4 gap-x-12">
+        {menuData.items.map((item) =>
+          item.type === name.toLowerCase() ? (
+            <RegMenuItem itemData={item} />
+          ) : (
+            false
+          )
+        )}
       </div>
     </div>
   );
