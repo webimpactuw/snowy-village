@@ -4,7 +4,7 @@ import { ImgMenuItem, RegMenuItem } from "./MenuItem";
 export function FeaturedMenuBlock() {
   return (
     <div className="grid">
-      <span id="FEATURED" className="block h-8 -mt-8 invisible" />
+      <span id="FEATURED" className="block h-10 -mt-10 invisible" />
       <h2 className="text-center font-fjalla-one tracking-wider text-4xl text-[#bc9a6c]">
         FEATURED
       </h2>
@@ -20,11 +20,11 @@ export function FeaturedMenuBlock() {
 export function RegularMenuBlock({ name }: { name: string }) {
   return (
     <div className="grid">
-      <span id={name} className="block h-8 -mt-8 invisible" />
+      <span id={name} className="block h-10 -mt-10 invisible" />
       <h2 className="text-center font-fjalla-one tracking-wider text-4xl text-[#bc9a6c]">
         {name}
       </h2>
-      <div className="grid px-24 py-4 gap-x-12">
+      <div className="grid px-6 py-4 gap-x-12">
         {menuData.items.map((item) =>
           item.type === name.toLowerCase() ? (
             <RegMenuItem itemData={item} />

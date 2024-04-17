@@ -19,7 +19,7 @@ export function ImgMenuItem({ itemData }: { itemData: ItemData }) {
 
 export function RegMenuItem({ itemData }: { itemData: ItemData }) {
   return (
-    <div className="grid grid-flow-col gap-2 items-center p-1">
+    <div className="grid grid-flow-col gap-2 justify-start items-center p-1">
       <p className="font-fjalla-one text-sm tracking-wider text-dark-navy">
         &#x2022; {itemData.name}
       </p>

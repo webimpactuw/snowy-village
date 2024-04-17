@@ -75,6 +75,12 @@
       "containsNuts": false
     },
     {
+      "name": "Very Very Very Long Bingsoo Name Test",
+      "type": "bingsoo",
+      "isPopular": true,
+      "containsNuts": true
+    },
+    {
       "name": "BingsooTest",
       "type": "bingsoo",
       "isPopular": false,
