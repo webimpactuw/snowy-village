@@ -1,3 +1,5 @@
+import {validation} from 'sanity'
+
 export default {
   name: 'menuitem',
   title: 'Menu Item',
@@ -13,6 +15,12 @@ export default {
       name: 'img',
       title: 'Image',
       type: 'image',
+    },
+    {
+      name: 'type',
+      title: 'Type',
+      type: 'string',
+      validation: (Rule: {required: () => any}) => Rule.required(),
     },
     {
       name: 'isPopular',
