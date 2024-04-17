@@ -1,3 +1,6 @@
+import React from "react";
+import Modal from "react-modal";
+
 export default function MenuHeader() {
   function DividerBar() {
     return <p className="text-[#bc9a6c] text-xl">|</p>;
@@ -27,6 +30,8 @@ export default function MenuHeader() {
     );
   }
 
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+
   return (
     <div className="bg-dark-blue pt-12 pb-2 grid justify-center">
       <h1 className="text-center text-white font-fjalla-one text-6xl tracking-widest mb-1">
@@ -44,12 +49,50 @@ export default function MenuHeader() {
         </div>
         <UnderlineSVG />
       </div>
-      <a
-        href="https://www.doordash.com/store/snowy-village-seattle-24422697/"
+      <button
         className="bg-[#ff3008] text-center text-white font-fjalla-one text-2xs tracking-wider my-3 mx-auto py-1 px-3"
+        onClick={() => setIsOpen(true)}
       >
         Order on Doordash
-      </a>
+      </button>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={() => setIsOpen(false)}
+        style={{
+          content: {
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            marginRight: "-50%",
+            transform: "translate(-50%, -50%)",
+            width: "75%",
+            height: "20%",
+            backgroundColor: "#e6eff8",
+          },
+        }}
+      >
+        <div className="grid grid-flow-row grid-cols-2 items-center justify-around h-full">
+          <a
+            href="https://www.doordash.com/store/snowy-village-seattle-24422697/"
+            className="bg-[#ff3008] text-center text-white font-fjalla-one text-sm tracking-wider my-3 mx-auto py-1 px-3 rounded-md border-2 border-dark-navy"
+          >
+            SEATTLE
+          </a>
+          <a
+            href="https://www.doordash.com/en-US/store/snowy-village-bellevue-24422669/"
+            className="bg-[#ff3008] text-center text-white font-fjalla-one text-sm tracking-wider my-3 mx-auto py-1 px-3 rounded-md border-2 border-dark-navy"
+          >
+            BELLEVUE
+          </a>
+          <a
+            href="https://www.doordash.com/store/snowy-village-portland-24729927/"
+            className="bg-[#ff3008] text-center text-white font-fjalla-one text-sm tracking-wider my-3 mx-auto py-1 px-3 rounded-md border-2 border-dark-navy"
+          >
+            PORTLAND
+          </a>
+        </div>
+      </Modal>
       <div className="w-screen flex justify-around items-center px-2">
         <MenuLink text="FEATURED" />
         <DividerBar />
