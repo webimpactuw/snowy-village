@@ -1,1 +1,3 @@
-export const schemaTypes = []
+import menuitem from './documents/menuitem'
+
+export const schemaTypes = [menuitem]
