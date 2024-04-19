@@ -1,5 +1,31 @@
 import menuData from "./menu-data.json";
 import { ImgMenuItem, RegMenuItem } from "./MenuItem";
+import ItemData from "./ItemData";
+import { getFeaturedMenuItems, urlFor } from "../../../sv-sanity/SanityClient";
+
+type SanityItemData = {
+  _rev: string;
+  name: string;
+  _updatedAt: string;
+  _createdAt: string;
+  _type: string;
+  containsNuts: boolean;
+  isPopular: boolean;
+  _id: string;
+  type: string;
+  img: {
+    _type: "image";
+    asset: {
+      _type: "reference";
+      _ref: string;
+    };
+  };
+};
+
+const featured: Array<SanityItemData> = await getFeaturedMenuItems();
+// const bingsoo: Array<SanityItemData> = await getMenuItems("bingsoo");
+// const drinks: Array<SanityItemData> = await getMenuItems("drinks");
+// const taiyaki: Array<SanityItemData> = await getMenuItems("taiyaki");
 
 export function FeaturedMenuBlock() {
   return (
@@ -12,6 +38,18 @@ export function FeaturedMenuBlock() {
         {menuData.items.map((item) =>
           item.img !== undefined ? <ImgMenuItem itemData={item} /> : false
         )}
+      </div>
+      <div>
+        {featured.map((item) => {
+          const data: ItemData = {
+            name: item.name,
+            img: urlFor(item.img).url(),
+            type: item.type,
+            isPopular: item.isPopular,
+            containsNuts: item.containsNuts,
+          };
+          return <ImgMenuItem itemData={data} />;
+        })}
       </div>
     </div>
   );
