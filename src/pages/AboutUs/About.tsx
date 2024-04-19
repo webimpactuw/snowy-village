@@ -4,7 +4,7 @@ const testURL = 'https://www.betterup.com/hs-fs/hubfs/Happy-work-team-cheering-a
 
 export default function About() {
   return <>
-    <div className="container mx-auto h-30 w-auto pt-10 pb-10 bg-dark-blue">
+    <div className="container mx-auto h-30 w-full pt-10 pb-10 bg-dark-blue">
       <h1 className="text-text-color-2 font-fjalla-one text-3xl text-center">ABOUT US</h1>
     </div>
 
