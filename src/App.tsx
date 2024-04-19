@@ -8,6 +8,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/AboutUs/About";
+import Footer from "./components/footer"
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
           <Route path="/aboutus" element={<About />}/>
         </Routes>
       </div>
+
+      <Footer />
     </>
   );
 }
