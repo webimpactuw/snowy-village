@@ -1,7 +1,6 @@
-import MenuBlock from "./MenuBlock";
+import { FeaturedMenuBlock, RegularMenuBlock } from "./MenuBlock";
 import HeartSVG from "./HeartSVG";
 import NutSVG from "./NutSVG";
-import menuData from "./menu-data.json";
 
 export default function MenuBody() {
   return (
@@ -21,9 +20,10 @@ export default function MenuBody() {
         </div>
       </div>
       <div className="grid gap-y-4">
-        <MenuBlock name="BINGSOO" blockData={menuData.bingsoo} />
-        <MenuBlock name="TAIYAKI" blockData={menuData.taiyaki} />
-        <MenuBlock name="DRINKS" blockData={menuData.drinks} />
+        <FeaturedMenuBlock />
+        <RegularMenuBlock name="BINGSOO" />
+        <RegularMenuBlock name="TAIYAKI" />
+        <RegularMenuBlock name="DRINKS" />
       </div>
     </div>
   );
