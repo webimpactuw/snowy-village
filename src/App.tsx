@@ -23,13 +23,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
 
-<<<<<<< HEAD
-=======
-          {/* <Route path="/faq" element={<FAQ />} />
-          <Route path="/collab" element={<Collab />} />
-  <Route path="/hiring" element={<Hiring />} /> */}
-
->>>>>>> c5f66e73ddd89c8340b1678634f88861ee94d838
           <Route path="/contact" element={<Contact />} />
           <Route path="/contact/hiring" element={<Contact />} />
           <Route path="/contact/faq" element={<Contact />} />
