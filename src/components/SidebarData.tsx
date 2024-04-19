@@ -10,6 +10,13 @@ import { SideNavItem } from "./types";
 // )
 
 export const SIDENAV_ITEMS: SideNavItem[] = [
+
+  {
+    title: "Home",
+    path: "/",
+    submenu: false
+  },
+
   {
     title: 'Menu',
     path: '/menu',
@@ -46,7 +53,7 @@ export const SIDENAV_ITEMS: SideNavItem[] = [
     submenu: true,
     subMenuItems: [
       { title: 'Our Team', path: '/aboutus/team' },
-      { title: 'Our Story', path: '/aboutus/collab'},
+      { title: 'Our Story', path: '/aboutus/story'},
       { title: 'Our Locations', path: '/aboutus/locations'}
     ]
   }

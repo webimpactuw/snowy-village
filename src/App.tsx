@@ -8,12 +8,15 @@ import "./App.css";
 // import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/AboutUs/About";
-// import Sidebar from "./components/Sidebar";
+// import SidebarPro from "./components/SidebarPro";
 import Navbar from "./components/Navbar";
+// import { DaisyNav } from "./components/DaisyNav";
 
 function App() {
   return (
     <>
+      {/* <DaisyNav /> */}
+      {/* <SidebarPro /> */}
       <Navbar/>
       
       <div>
@@ -31,7 +34,11 @@ function App() {
           <Route path="/history" element={<History />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="*" element={<Home />} />
+
           <Route path="/aboutus" element={<About />}/>
+          <Route path="/aboutus/team" element={<About />}/>
+          <Route path="/aboutus/story" element={<About />}/>
+          <Route path="/aboutus/locations" element={<About />}/>
         </Routes>
       </div>
     </>
