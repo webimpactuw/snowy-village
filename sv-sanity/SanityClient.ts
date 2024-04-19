@@ -14,7 +14,7 @@ export async function getFeaturedMenuItems() {
 }
 
 export async function getMenuItems(type: string) {
-  const items = await client.fetch(`[_type == "menuitem" && type == ${type}]`)
+  const items = await client.fetch(`[_type == "menuitem" && type == "${type.toLowerCase()}"]`)
   return items
 }
 
