@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-// import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { IconContext } from "react-icons";
 import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 // import Sidebar from "./Sidebar";
@@ -22,10 +22,10 @@ function Navbar() {
   const sideNavClicked = (): void => {
     if(isSidebarOpen) {
       setIsSidebarOpen(false);
-      // enablePageScroll();
+      enablePageScroll();
     } else {
       setIsSidebarOpen(true);
-      // disablePageScroll();
+      disablePageScroll();
     }
   }
 
@@ -41,7 +41,7 @@ function Navbar() {
 
   return (
     <>
-        <div className={isSidebarOpen ? "hidden" : "top-0 sticky flex z-2 bg-dark-navy text-white py-1 px-4"}>
+        <div className={isSidebarOpen ? "hidden" : "top-0 sticky flex z-0 bg-dark-navy text-white py-1 px-4"}>
           <div className="sticky inset-x-0 flex md:items-center mx-auto w-full border-black">
             {/* <h1 className="sm:hidden md:text-2xl w-full">Snowy Village</h1> */}
             <ul className="hidden md:flex"> 
@@ -58,9 +58,9 @@ function Navbar() {
           </div>
         </div>
       
-      <div className="sticky">
+      <div className="sticky z-2 overflow-hidden fixed top-0">
       <div className={`
-          ${isSidebarOpen ? "sticky z-2 left-0 h-screen border-r-gray-900 bg-background-color mx-auto" : "hidden"}`}>
+          ${isSidebarOpen ? "sticky z-2  h-screen border-r-gray-900 bg-background-color mx-auto" : "hidden"}`}>
             
             <Sidebar>
               <Menu className="bg-ice-blue text-2xl"
@@ -100,7 +100,7 @@ function Navbar() {
           </ul> */}
        </div>
        </div>
-       <div onClick={sideNavClicked} className={ isSidebarOpen ? "z-0 absolute top-0 right-2 md:hidden" : "hidden"}>
+       <div onClick={sideNavClicked} className={ isSidebarOpen ? "z-2 fixed top-0 right-2 md:hidden" : "hidden"}>
           <IconContext.Provider value={{ color: "black" }}> 
             <AiOutlineClose size={30}/>
           </IconContext.Provider>
