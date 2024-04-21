@@ -28,7 +28,7 @@ type SanityItemData = {
 
 const featured: Array<SanityItemData> = await getFeaturedMenuItems();
 const bingsoo: Array<SanityItemData> = await getMenuItems("bingsoo");
-const drinks: Array<SanityItemData> = await getMenuItems("drinks");
+const drinks: Array<SanityItemData> = await getMenuItems("drink");
 const taiyaki: Array<SanityItemData> = await getMenuItems("taiyaki");
 
 const menu = new Map<string, Array<SanityItemData>>();
@@ -44,16 +44,18 @@ export function FeaturedMenuBlock() {
         FEATURED
       </h2>
       <div className="grid grid-cols-2 px-8 py-4 gap-x-12 gap-y-6">
-        {featured.map((item: SanityItemData, i: number) => {
-          const data: ItemData = {
-            name: item.name,
-            img: urlFor(item.img).url(),
-            type: item.type,
-            isPopular: item.isPopular,
-            containsNuts: item.containsNuts,
-          };
-          return <ImgMenuItem key={i} itemData={data} />;
-        })}
+        {featured
+          .sort((a, b) => (a.name < b.name ? -1 : 1))
+          .map((item: SanityItemData, i: number) => {
+            const data: ItemData = {
+              name: item.name,
+              img: urlFor(item.img).url(),
+              type: item.type,
+              isPopular: item.isPopular,
+              containsNuts: item.containsNuts,
+            };
+            return <ImgMenuItem key={i} itemData={data} />;
+          })}
       </div>
     </div>
   );
@@ -69,7 +71,8 @@ export function RegularMenuBlock({ name }: { name: string }) {
       <div className="grid px-6 py-4 gap-x-12">
         {menu
           .get(name.toLowerCase())
-          ?.map((item: SanityItemData, i: number) => {
+          ?.sort((a, b) => a.name.localeCompare(b.name))
+          .map((item: SanityItemData, i: number) => {
             const data: ItemData = {
               name: item.name,
               type: item.type,
