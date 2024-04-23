@@ -5,6 +5,8 @@ import EmailForm from "../../components/EmailForm";
 import LightBlueWave from "./LightBlueWave"
 import KidPicture from "./Kid.png"
 import SeveralBingsoos from "./SeveralBingsoos.png"
+import BeigeDownWave from "./BeigeDownWave";
+import BlueUpWave from "./BlueUpWave";
 export default function Home() {
   return(
     <>
@@ -41,7 +43,11 @@ export default function Home() {
 
     <LightBlueWave />
 
-    <div className="pl-20 pr-20 pt-0 mt-0 flex">
+    <div>
+      <h1>LOCATIONS</h1>
+    </div>
+
+    <div className="pl-20 pr-20 flex bg-beige">
 
       <div className="flex-start w-[40%] grow">
         <img src={KidPicture} className="flex"/>
@@ -53,11 +59,23 @@ export default function Home() {
           <p className="text-right">Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. We use only the best ingredients and we source them our from Japan. Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. Did you know? Snowy Village was founded in.</p>
       </div>
     </div>
+    
+    <div>
+    <BeigeDownWave />
+    </div>
+    <BlueUpWave />
 
-    <div className="p-20">
+    <div className="p-20 mt-0 bg-light-blue">
       <h1>INTERESTED IN WORKING WITH US?</h1>
+      <EmailForm/>
+    </div>
 
-      <EmailForm />
+    <div>
+      <h1>BINGSOO, TAIYAKI, OR REFRESHING DRINKS?</h1>
+    </div>
+
+    <div>
+      <h1>OUR COMMUNITY</h1>
     </div>
     </>
   );
