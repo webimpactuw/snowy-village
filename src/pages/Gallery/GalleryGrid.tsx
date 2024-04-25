@@ -27,7 +27,7 @@ const GalleryGrid: React.FC<GalleryProps> = ({ images }) => {
               <div key={index} className="relative overflow-hidden rounded-sm group" onClick={() => toggleCaption(index)}>
                 <img src={image.src} alt={image.alt} className="w-full h-auto transform group-hover:scale-110 transition duration-300 ease-in-out"/>
                 <div className={`absolute inset-0 bg-dark-navy bg-opacity-50 flex justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out ${activeIndex === index ? 'opacity-100' : 'opacity-0 md:group-hover:opacity-100'}`}>
-                  <p className="text-text-color-2 text-center px-4">{image.caption}</p>
+                  <p className="text-text-color-2 text-center px-4 font-fjalla-one">{image.caption}</p>
                 </div>
               </div>
             ))}

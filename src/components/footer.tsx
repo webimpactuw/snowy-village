@@ -1,39 +1,60 @@
 import React from 'react';
 import FooterColumn from './FooterComponents/FooterColumn';
-import FooterTitle from './FooterComponents/FooterTitle';
+
+interface Column {
+    title: { label: string; url: string };
+    list?: { label: string; url: string }[];
+}
 
 
-function Footer() {
+const footerData: Column[] = [
+    {
+        title: { label: 'Menu', url: '/menu' },
+        list: [
+            { label: 'Featured', url: '/menu#FEATURED' },
+            { label: 'Bingsoo', url: '/menu#BINGSOO' },
+            { label: 'Drinks', url: '/menu#DRINKS' },
+            { label: 'Taiyaki', url: '/menu#TAIYAKI' }
+        ]
+    },
+    {
+        title: { label: 'Gallery', url: '/Gallery' },
+        list: [
+            { label: 'Gallery 1', url: '/' },
+            { label: 'Gallery 2', url: '/' },
+            { label: 'Gallery 3', url: '/' }
+        ]
+    },
+    {
+        title: { label: 'Contact', url: '/contact' },
+        list: [
+            { label: 'Apply Now', url: '/' },
+            { label: 'Collaboration', url: '/' },
+            { label: 'FAQ', url: '/' }
+        ]
+        
+    },
+    {
+        title: { label: 'About Us', url: '/aboutus' },
+        list: [
+            { label: 'Our Team', url: '/' },
+            { label: 'Our Story', url: '/' },
+            { label: 'Our Locations', url: '/' }
+        ]
+        
+    }
+];
+
+const Footer: React.FC = () => {
     return (
-        <div className="relative bg-dark-blue gap-20 text-left w-full h-[500px] overflow-clip text-text-color-2">
-            <div className="absolute top-20 gap-20 flex flex-col items-start w-[1122px] left-[159px]">
-                <div className="w-full flex items-start self-stretch gap-[30px]">
-
-                    <div className={`flex-1 flex flex-col items-start flex-grow font-black overflow-clip font-fjalla-one`}>
-
-                        <div className="gap-8 w-[135px]">
-                            <p className="w-full text-base leading-normal m-0">SNOWY VILLAGE</p>
-                        </div>
-
-                    </div>
-
-                    <div className={`flex-1 gap-4 flex flex-col items-start flex-grow overflow-clip font-fjalla-one`}>
-
-                        <p className="w-full text-base font-semibold leading-normal m-0">Menu</p>
-
-                            <div className="w-full flex flex-col items-start self-stretch font-normal">
-                                <div className="py-2 w-full flex items-start self-stretch">
-                                    <p className="flex-1 text-sm leading-normal m-0">Bingsoo</p>
-                                </div>
-                                <div className="py-2 w-full flex items-start self-stretch">
-                                    <p className="flex-1 text-sm leading-normal m-0">Drinks</p>
-                                </div>
-                                <div className="py-2 w-full flex items-start self-stretch">
-                                    <p className="flex-1 text-sm leading-normal m-0">Taiyaki</p>
-                                </div>
-                            </div>
-                    </div>
-                </div>
+        <div className="bg-dark-blue text-text-color-2 w-full h-auto py-10 px-5">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start">
+                {footerData.map((column) => (
+                    <FooterColumn key={column.title.label} columns={[column]} />
+                ))}
+            </div>
+            <div className="text-center text-white mt-5 font-thin">
+                © 2024 Snowy Village. All rights reserved.
             </div>
         </div>
     );
