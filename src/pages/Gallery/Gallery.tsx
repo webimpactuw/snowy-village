@@ -4,20 +4,31 @@ import GalleryGrid from './GalleryGrid';
 const testURL = 'https://handletheheat.com/wp-content/uploads/2021/06/homemade-vanilla-ice-cream.jpg';
 
 const images = [
+  { src: testURL, alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
   { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
-  { src: testURL, alt:'Description of image', caption: 'Black Berry' },
-  { src: testURL, alt:'Description of image', caption: 'Other fruit' },
+  { src: testURL, alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
+  { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
+  { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
+  { src: testURL, alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
+  { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
+  { src: testURL, alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
+  { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
+  { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
+
+
 
 ];
 
 function Gallery() {
   return (
-
-    <div className="bg-background-color pb-20">
-      <Header />
-      <GalleryGrid images={images} />
-    </div>
-
+    <>
+      <div className="bg-background-color">
+        <Header />
+      </div>
+      <div className='bg-white pb-20'>
+        <GalleryGrid images={images} />
+      </div>
+    </>
   );
 }
 
