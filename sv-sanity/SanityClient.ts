@@ -18,6 +18,11 @@ export async function getMenuItems(type: string) {
   return items
 }
 
+export async function getLocations() {
+  const locations = await client.fetch('*[_type == "locationitem"]')
+  return locations
+}
+
 const urlBuilder = imageUrlBuilder(client)
 
 export function urlFor(source: any) {

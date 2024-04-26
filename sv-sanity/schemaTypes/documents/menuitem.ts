@@ -2,7 +2,7 @@ import {validation} from 'sanity'
 
 export default {
   name: 'menuitem',
-  title: 'Menu Item',
+  title: 'Menu Items',
   type: 'document',
   fields: [
     {

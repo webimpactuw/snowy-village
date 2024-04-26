@@ -1,4 +1,3 @@
-// import menuData from "./menu-data.json";
 import { ImgMenuItem, RegMenuItem } from "./MenuItem";
 import ItemData from "./ItemData";
 import {
