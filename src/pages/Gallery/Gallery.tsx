@@ -1,6 +1,7 @@
 import Header from './Header';
 import GalleryGrid from './GalleryGrid';
 
+
 const testURL = 'https://handletheheat.com/wp-content/uploads/2021/06/homemade-vanilla-ice-cream.jpg';
 
 const images = [
