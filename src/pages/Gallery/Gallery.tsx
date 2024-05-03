@@ -29,7 +29,7 @@ function Gallery() {
       {/* <div className="mx-auto bg-white">
         <img src="src/assets/GalleryImages/DRIPPPPP.png" alt='dripping'/>
       </div> */}
-      <div className='bg-white pb-20'>
+      <div className='pb-20' style={{color: "FFFFFF"}}>
         <GalleryGrid images={images} />
       </div>
     </>
