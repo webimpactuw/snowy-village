@@ -25,12 +25,6 @@ export default function Contact() {
 
       <Header />
 
-      {/* <div className="bg-dark-blue p-5 grid justify-center">
-        <h1 className="text-center text-white font-fjalla-one text-5xl md:text-6xl tracking-widest mb-1">
-          CONTACT US
-        </h1>
-      </div> */}
-
       <Link to={{
         pathname: '/contact/hiring'
       }}/>
