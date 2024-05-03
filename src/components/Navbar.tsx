@@ -60,12 +60,12 @@ function Navbar() {
           </div>
         </div>
       
-      <div className="sticky z-2 overflow-hidden fixed top-0">
+      <div className="sticky z-1 overflow-hidden top-0">
       <div className={`
           ${isSidebarOpen ? "sticky z-2  h-screen border-r-gray-900 bg-background-color mx-auto" : "hidden"}`}>
             
             <Sidebar>
-              <Menu className="bg-beige text-2xl"
+              <Menu className="bg-ice-blue text-2xl"
                 menuItemStyles={{
                   button: ({ level, active }) => {
                     // only apply styles on first level elements of the tree
