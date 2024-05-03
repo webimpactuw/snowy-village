@@ -94,8 +94,6 @@ export default function MenuHeader() {
         </div>
       </Modal>
       <div className="w-screen flex justify-around items-center px-2">
-        <MenuLink text="FEATURED" />
-        <DividerBar />
         <MenuLink text="BINGSOO" />
         <DividerBar />
         <MenuLink text="TAIYAKI" />

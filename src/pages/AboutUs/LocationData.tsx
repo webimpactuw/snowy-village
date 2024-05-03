@@ -4,4 +4,5 @@ export default interface LocationData {
   address: string;
   days: Array<string>;
   hours: Array<string>;
+  googlemapslink?: string;
 }

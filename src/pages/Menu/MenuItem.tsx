@@ -23,8 +23,8 @@ export function RegMenuItem({ itemData }: { itemData: ItemData }) {
       <p className="font-fjalla-one text-sm tracking-wider text-dark-navy">
         &#x2022; {itemData.name}
       </p>
-      {itemData.isPopular ? <HeartSVG width="3" /> : <div className="w-3" />}
-      {itemData.containsNuts ? <NutSVG width="3" /> : <div className="w-3" />}
+      {itemData.isPopular && <HeartSVG width="3" />}
+      {itemData.containsNuts && <NutSVG width="3" />}
     </div>
   );
 }
