@@ -1,4 +1,8 @@
-import { FeaturedMenuBlock, RegularMenuBlock } from "./MenuBlock";
+import {
+  RegularMenuBlock,
+  GalleryMenuBlock,
+  SideImgMenuBlock,
+} from "./MenuBlock";
 import HeartSVG from "./HeartSVG";
 import NutSVG from "./NutSVG";
 
@@ -20,9 +24,9 @@ export default function MenuBody() {
         </div>
       </div>
       <div className="grid gap-y-4">
-        <FeaturedMenuBlock />
-        <RegularMenuBlock name="BINGSOO" />
-        <RegularMenuBlock name="TAIYAKI" />
+        {/** <FeaturedMenuBlock /> */}
+        <GalleryMenuBlock name="BINGSOO" />
+        <SideImgMenuBlock name="TAIYAKI" img="temp_taiyaki.jpg" />
         <RegularMenuBlock name="DRINKS" />
       </div>
     </div>
