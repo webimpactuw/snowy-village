@@ -3,6 +3,7 @@ import EmailForm from "../../components/EmailForm";
 import SampleText from "../../components/SampleText";
 import HiringImage from "./Hiring.jpg";
 import CollabImage from "./Collab.jpg";
+import Header from "./Header";
 
 export default function Contact() {
 
@@ -21,13 +22,9 @@ export default function Contact() {
 
   return <div className="flex-col items-center bg-ice-blue">
 
-      <div className="bg-dark-blue p-5 grid justify-center">
-        <h1 className="text-center text-white font-fjalla-one text-5xl md:text-6xl tracking-widest mb-1">
-          CONTACT US
-        </h1>
-      </div>
+      <Header />
 
-      <div className="flex flex-col w-full md:pl-[20%] md:pr-[20%] md:p-8">
+      <div className="flex flex-col w-full md:pl-[20%] md:pr-[20%] md:p-8 bg-beige">
         <div className="flex">
           <img src={HiringImage} className="w-1/2 p-3"/>
           <div className="p-3">
@@ -40,7 +37,7 @@ export default function Contact() {
         <button>Apply Now</button>
       </div>
 
-      <div className="flex flex-col w-full p-5 bg-dark-blue text-white md:pl-[20%] md:pr-[20%] md:p-8">
+      <div className="flex flex-col w-full p-5 bg-ice-blue md:pl-[20%] md:pr-[20%] md:p-8">
         <h1>Collab</h1>
         <img src={CollabImage} className="w-1/2 p-3"/>
         <SampleText />
@@ -59,7 +56,7 @@ export default function Contact() {
 
       </div>
 
-      <div className="flex flex-col w-full p-5 bg-ice-blue md:pl-[20%] md:pr-[20%] md:p-8">
+      <div className="flex flex-col w-full p-5 bg-beige md:pl-[20%] md:pr-[20%] md:p-8">
           <h1>FAQ</h1>
           <div>
             <SampleText />
