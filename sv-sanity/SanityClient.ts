@@ -28,6 +28,11 @@ export async function getLocations() {
   return locations
 }
 
+export async function getCarouselImgs() {
+  const items = await client.fetch('*[_type == "menucarouselimg"]')
+  return items
+}
+
 const urlBuilder = imageUrlBuilder(client)
 
 export function urlFor(source: any) {
