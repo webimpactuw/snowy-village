@@ -39,7 +39,7 @@ export default {
         "dark-green": colorNames.dark_green,
         "dark-blue": colorNames.dark_blue,
         "aquamarine-blue": colorNames.aquamarine_blue,
-        "beige": colorNames.beige,
+        beige: colorNames.beige,
       },
       fontFamily: {
         "fjalla-one": ["Fjalla One", "sans-serif"],
@@ -49,6 +49,28 @@ export default {
       fontSize: {
         "2xs": "0.625rem",
         "3xs": "0.5rem",
+      },
+      keyframes: {
+        typing: {
+          "0%": {
+            width: "0%",
+            visibility: "hidden",
+          },
+          "100%": {
+            width: "100%",
+          },
+        },
+        blink: {
+          "50%": {
+            borderColor: "transparent",
+          },
+          "100%": {
+            borderColor: "white",
+          },
+        },
+      },
+      animation: {
+        typing: "typing 2s steps(20) alternate, blink 1.5s infinite",
       },
     },
   },
