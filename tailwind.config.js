@@ -44,6 +44,7 @@ export default {
       fontFamily: {
         "fjalla-one": ["Fjalla One", "sans-serif"],
         "kumbh-sans": ["Kumbh Sans", "sans-serif"],
+        "sans": ["Kumbh Sans", "sans-serif"]
       },
       fontSize: {
         "2xs": "0.625rem",
