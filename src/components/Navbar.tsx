@@ -22,29 +22,32 @@ function Navbar() {
 
   return (
     <>
-        <div className={isSidebarOpen ? "hidden" : "sticky top-0 flex z-40"}>
-          <div className="bg-background-color sticky top-0 flex justify-between items-center h-2/10 mx-auto w-full px-4 rounded border-black">
-            <h1 className="text-2xl w-full">Snowy Village</h1>
-            <ul className="hidden md:flex">
-              <li><Link to="/" className="p-4">Home</Link></li>
-              <li><Link to="/menu" className="p-4">Menu</Link></li>
-              <li><Link to="/gallery" className="p-4">Gallery</Link></li>
-              <li><Link to="/contact" className="p-4">Contact</Link></li>
+        <div className={isSidebarOpen ? "hidden" : "sticky top-0 flex z-40 bg-dark-navy text-white py-1 px-4"}>
+          <div className="sticky top-0 flex md:items-center mx-auto w-full border-black">
+            {/* <h1 className="sm:hidden md:text-2xl w-full">Snowy Village</h1> */}
+            <ul className="hidden md:flex"> 
+              <li><Link to="/" className="hover:bg-blue-200 rounded-md p-4 transition ease-in-out delay-50 mr-1 duration-300">Home</Link></li>
+              <li><Link to="/menu" className="p-4 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Menu</Link></li>
+              <li><Link to="/gallery" className="p-4 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Gallery</Link></li>
+              <li><Link to="/contact" className="p-4 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Contact</Link></li>
+              <li><Link to="/aboutus" className="p-4 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">About Us</Link></li>
             </ul>
 
-            <div onClick={sideNavClicked} className="md:hidden top-2">
+            <div onClick={sideNavClicked} className="md:hidden top-2 right-1">
               <AiOutlineMenu size={30}/>
             </div>
           </div>
         </div>
       
-      <div className={isSidebarOpen ? "z-50 absolute left-0 top-0 h-full w-full border-r border-r-gray-900 bg-background-color" : "fixed hidden"}>
+      <div className={`ease-in-out duration-300
+          ${isSidebarOpen ? "z-50 absolute left-0 top-0 h-full w-full border-r border-r-gray-900 bg-background-color translate-x-0" : "translate-x-full fixed hidden"}`}>
         <div className="m-10">
           <ul className="uppercase text-lg">
             <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/" onClick={sideNavClicked}>Home</Link></li>
             <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/menu" onClick={sideNavClicked}>Menu</Link></li>
             <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/gallery" onClick={sideNavClicked}>Gallery</Link></li>
             <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/contact" onClick={sideNavClicked}>Contact</Link></li>
+            <li className="pt-4 pb-2 border-b border-gray-600"><Link to="/aboutus" onClick={sideNavClicked}>About Us</Link></li>
           </ul>
         </div>
 

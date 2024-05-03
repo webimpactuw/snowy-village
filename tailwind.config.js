@@ -1,15 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 
 const colorNames = {
+  aquamarine_blue: "#00729D",
   dark_navy: "#222a39",
   faded_blue: "#97c5d6",
   grey: "#536271",
   green_grey: "#738b86",
-  ice_blue: "#E6EFF8",
+  light_blue: "#F5FAFF",
+  ice_blue: "#E8F4FF",
   white: "#ebebeb",
   sage_green: "#4b6858",
   dark_green: "#3c4b34",
   dark_blue: "#303d55",
+  beige: "#FAF9F6",
 };
 
 export default {
@@ -29,14 +32,19 @@ export default {
         "faded-blue": colorNames.faded_blue,
         grey: colorNames.grey,
         "green-grey": colorNames.green_grey,
+        "light-blue": colorNames.light_blue,
         "ice-blue": colorNames.ice_blue,
         white: colorNames.white,
         "sage-green": colorNames.sage_green,
         "dark-green": colorNames.dark_green,
         "dark-blue": colorNames.dark_blue,
+        "aquamarine-blue": colorNames.aquamarine_blue,
+        "beige": colorNames.beige,
       },
       fontFamily: {
         "fjalla-one": ["Fjalla One", "sans-serif"],
+        "kumbh-sans": ["Kumbh Sans", "sans-serif"],
+        "sans": ["Kumbh Sans", "sans-serif"]
       },
       fontSize: {
         "2xs": "0.625rem",

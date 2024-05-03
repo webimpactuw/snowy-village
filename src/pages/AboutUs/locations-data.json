@@ -1,0 +1,35 @@
+{
+  "locations": [
+    {
+      "name": "SEATTLE",
+      "img": "seattle.jpg",
+      "address": "5264 University Way NE, Seattle, WA 98105",
+      "days": ["Mon - Thur", "Friday", "Saturday", "Sunday"],
+      "hours": ["3-9:45 PM", "3-10:45 PM", "1-10:45 PM", "1-9:45 PM"],
+      "googlemapslink": "https://www.google.com/maps/place/Snowy+Village/@47.6682338,-122.3154511,17z/data=!4m15!1m8!3m7!1s0x5490146394b2a79f:0xc4536661fc391e07!2s5264+University+Wy+NE,+Seattle,+WA+98105!3b1!8m2!3d47.6682302!4d-122.3128762!16s%2Fg%2F11h3ng_hgs!3m5!1s0x549015057c7a99b3:0x47db1e5bf87c1c20!8m2!3d47.6682302!4d-122.3128762!16s%2Fg%2F11h77_gqjm?entry=ttu"
+    },
+    {
+      "name": "BELLEVUE",
+      "img": "bellevue.jpg",
+      "address": "1075 Bellevue Way NE B1, Bellevue, WA 98004",
+      "days": ["Mon - Thur", "Friday", "Saturday", "Sunday"],
+      "hours": ["3-9:45 PM", "3-10:45 PM", "1-10:45 PM", "1-9:45 PM"],
+      "googlemapslink": "https://www.google.com/maps/place/Snowy+Village/@47.6196501,-122.2052803,16z/data=!4m15!1m8!3m7!1s0x54906c8fba7aaaab:0x2257865f42f13563!2s1075+Bellevue+Way+NE+B1,+Bellevue,+WA+98004!3b1!8m2!3d47.6196916!4d-122.2027121!16s%2Fg%2F11rp_t_glz!3m5!1s0x54906d02e75077f9:0xa20633a40e61e137!8m2!3d47.6196916!4d-122.2027121!16s%2Fg%2F11pyk0t8pg?entry=ttu"
+    },
+    {
+      "name": "PORTLAND",
+      "img": "portland.jpg",
+      "address": "3912 N Vancouver Ave #105, Portland, OR 97227",
+      "days": ["Mon - Thur", "Friday", "Saturday", "Sunday"],
+      "hours": ["3-9:45 PM", "3-10:45 PM", "1-10:45 PM", "1-9:45 PM"],
+      "googlemapslink": "https://www.google.com/maps/place/Snowy+Village/@45.5510802,-122.6703356,17z/data=!4m15!1m8!3m7!1s0x5495a73fe5c451ad:0x8e5b8a38a7e74b18!2s3912+N+Vancouver+Ave+%23105,+Portland,+OR+97227!3b1!8m2!3d45.5510765!4d-122.6677607!16s%2Fg%2F11shnyw07w!3m5!1s0x5495a7c37320a699:0xb4c999021a890fa1!8m2!3d45.5508952!4d-122.667564!16s%2Fg%2F11k9ff3ptl?entry=ttu"
+    },
+    {
+      "name": "FEDERAL WAY",
+      "img": "federalway.jpg",
+      "address": "COMING SOON",
+      "days": ["COMING SOON"],
+      "hours": ["COMING SOON"]
+    }
+  ]
+}
