@@ -13,9 +13,19 @@ export async function getFeaturedMenuItems() {
   return items
 }
 
-export async function getMenuItems(type: string) {
-  const items = await client.fetch(`[_type == "menuitem" && type == ${type}]`)
+export async function getFeaturedOfType(type: string) {
+  const items = await client.fetch(`*[_type == "menuitem" && type == "${type}" && defined(img)]`)
   return items
+}
+
+export async function getMenuItems(type: string) {
+  const items = await client.fetch(`*[_type == "menuitem" && type == "${type}"]`)
+  return items
+}
+
+export async function getLocations() {
+  const locations = await client.fetch('*[_type == "locationitem"]')
+  return locations
 }
 
 const urlBuilder = imageUrlBuilder(client)
