@@ -75,7 +75,9 @@ export function SideImgMenuBlock({ name, img }: { name: string; img: string }) {
         {name}
       </h2>
       <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
-        <img src={img} />
+        <div className="p-2 rounded-lg border-4 border-grey">
+          <img src={img} className="rounded-lg" />
+        </div>
         <div>
           {menu
             .get(name.toLowerCase())

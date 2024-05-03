@@ -8,7 +8,7 @@ import NutSVG from "./NutSVG";
 
 export default function MenuBody() {
   return (
-    <div className="bg-ice-blue grid justify-center">
+    <div className="bg-light-blue grid justify-center">
       <div className="grid grid-flow-col m-1 justify-center">
         <div className="flex items-center justify-center w-fit p-2">
           <HeartSVG width="3" />
@@ -24,7 +24,6 @@ export default function MenuBody() {
         </div>
       </div>
       <div className="grid gap-y-4">
-        {/** <FeaturedMenuBlock /> */}
         <GalleryMenuBlock name="BINGSOO" />
         <SideImgMenuBlock name="TAIYAKI" img="temp_taiyaki.jpg" />
         <RegularMenuBlock name="DRINKS" />
