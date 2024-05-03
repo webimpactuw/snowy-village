@@ -29,6 +29,8 @@ function Navbar() {
     }
   }
 
+  // s
+
   // const itemClicked = (hasSubMenu: boolean) => {
 
   //   if(!hasSubMenu) {
@@ -77,14 +79,14 @@ function Navbar() {
                 <MenuItem component={<Link to="/menu"/>} onClick={() => sideNavClicked()}>Menu</MenuItem>
                 <MenuItem component={<Link to="/gallery" />} onClick={() => sideNavClicked()}>Gallery</MenuItem>
                 <SubMenu label="Contact">
-                  <MenuItem component={<Link to="/contact/hiring" />} onClick={() => sideNavClicked()}>Hiring</MenuItem>
-                  <MenuItem component={<Link to="/contact/collab" />} onClick={() => sideNavClicked()}>Collab</MenuItem>
-                  <MenuItem component={<Link to="/contact/faq" />} onClick={() => sideNavClicked()}>FAQ</MenuItem>
+                  <MenuItem onClick={() => sideNavClicked()}><a href={`/contact#hiring`}>Hiring</a></MenuItem>
+                  <MenuItem onClick={() => sideNavClicked()}><a href={`/contact#collab`}>Collab</a></MenuItem>
+                  <MenuItem onClick={() => sideNavClicked()}><a href={`/contact#faq`}>FAQ</a></MenuItem>
                 </SubMenu>
                 <SubMenu label="About Us">
-                  <MenuItem component={<Link to="/aboutus/team" />} onClick={() => sideNavClicked()} >Team</MenuItem>
-                  <MenuItem component={<Link to="/aboutus/story" />} onClick={() => sideNavClicked()}>Story</MenuItem>
-                  <MenuItem component={<Link to="/aboutus/locations" />} onClick={() => sideNavClicked()}>Locations</MenuItem>
+                  <MenuItem onClick={() => sideNavClicked()} > <a href={`/aboutus#team`}>Team</a> </MenuItem>
+                  <MenuItem onClick={() => sideNavClicked()}> <a href={`/aboutus#story`}>Story</a> </MenuItem>
+                  <MenuItem onClick={() => sideNavClicked()}> <a href={`/aboutus#locations`}>Locations</a> </MenuItem>
                 </SubMenu>
               </Menu>
             </Sidebar>
