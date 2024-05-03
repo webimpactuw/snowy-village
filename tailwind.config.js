@@ -7,7 +7,7 @@ const colorNames = {
   grey: "#536271",
   green_grey: "#738b86",
   light_blue: "#F5FAFF",
-  ice_blue: "#E6EFF8",
+  ice_blue: "#E8F4FF",
   white: "#ebebeb",
   sage_green: "#4b6858",
   dark_green: "#3c4b34",
@@ -43,8 +43,7 @@ export default {
       },
       fontFamily: {
         "fjalla-one": ["Fjalla One", "sans-serif"],
-        "inria-sans": ["inria-sans", "sans-serif"],
-        "ibm-plex-sans": ["ibm-plex-sans", "sans-serif"]
+        "kumbh-sans": ["Kumbh Sans", "sans-serif"],
       },
       fontSize: {
         "2xs": "0.625rem",
