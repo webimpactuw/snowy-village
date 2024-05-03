@@ -43,15 +43,15 @@ function Navbar() {
 
   return (
     <>
-        <div className={isSidebarOpen ? "hidden" : "top-0 sticky flex z-0 bg-dark-navy text-white py-1 px-4"}>
+        <div className={isSidebarOpen ? "hidden" : "top-0 sticky flex z-0 bg-aquamarine-blue text-white py-1 px-4"}>
           <div className="sticky inset-x-0 flex md:items-center mx-auto w-full border-black">
             {/* <h1 className="sm:hidden md:text-2xl w-full">Snowy Village</h1> */}
             <ul className="hidden md:flex"> 
               <li><Link to="/" className="hover:bg-blue-200 rounded-md p-4 transition ease-in-out delay-50 mr-1 duration-300">Home</Link></li>
-              <li><Link to="/menu" className="p-4 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Menu</Link></li>
-              <li><Link to="/gallery" className="p-4 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Gallery</Link></li>
-              <li><Link to="/contact" className="p-4 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Contact</Link></li>
-              <li><Link to="/aboutus" className="p-4 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">About Us</Link></li>
+              <li><Link to="/menu" className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Menu</Link></li>
+              <li><Link to="/gallery" className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Gallery</Link></li>
+              <li><Link to="/contact" className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Contact</Link></li>
+              <li><Link to="/aboutus" className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">About Us</Link></li>
             </ul>
 
             <div onClick={sideNavClicked} className="ml-auto md:hidden top-2 pr-0 justify-right right-1 z-0">
@@ -65,7 +65,7 @@ function Navbar() {
           ${isSidebarOpen ? "sticky z-2  h-screen border-r-gray-900 bg-background-color mx-auto" : "hidden"}`}>
             
             <Sidebar>
-              <Menu className="bg-ice-blue text-2xl"
+              <Menu className="bg-beige text-2xl"
                 menuItemStyles={{
                   button: ({ level, active }) => {
                     // only apply styles on first level elements of the tree
