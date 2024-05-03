@@ -23,9 +23,12 @@ const images = [
 function Gallery() {
   return (
     <>
-      <div className="bg-background-color">
+      <div className="bg-background-color" style={{color: "F0FAFF"}}>
         <Header />
       </div>
+      {/* <div className="mx-auto bg-white">
+        <img src="src/assets/GalleryImages/DRIPPPPP.png" alt='dripping'/>
+      </div> */}
       <div className='bg-white pb-20'>
         <GalleryGrid images={images} />
       </div>
