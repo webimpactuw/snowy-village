@@ -44,24 +44,43 @@ export function GalleryMenuBlock({ name }: { name: string }) {
   return (
     <div className="grid">
       <span id={name} className="block h-10 -mt-10 invisible" />
-      <h2 className="text-center font-fjalla-one tracking-wider text-4xl text-[#bc9a6c]">
+      <h2 className="text-center tracking-wider text-4xl text-[#bc9a6c]">
         {name}
       </h2>
       <FeaturedGallery />
       <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
-        {menu
-          .get(name.toLowerCase())
-          ?.sort((a, b) => a.name.localeCompare(b.name))
-          .map((item: SanityItemData, i: number) => {
-            const data: ItemData = {
-              name: item.name,
-              type: item.type,
-              img: undefined,
-              isPopular: item.isPopular,
-              containsNuts: item.containsNuts,
-            };
-            return <RegMenuItem key={i} itemData={data} />;
-          })}
+        <div>
+          {menu
+            .get(name.toLowerCase())
+            ?.slice(0, menu.get(name.toLowerCase())!.length / 2)
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((item: SanityItemData, i: number) => {
+              const data: ItemData = {
+                name: item.name,
+                type: item.type,
+                img: undefined,
+                isPopular: item.isPopular,
+                containsNuts: item.containsNuts,
+              };
+              return <RegMenuItem key={i} itemData={data} />;
+            })}
+        </div>
+        <div>
+          {menu
+            .get(name.toLowerCase())
+            ?.slice(menu.get(name.toLowerCase())!.length / 2)
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((item: SanityItemData, i: number) => {
+              const data: ItemData = {
+                name: item.name,
+                type: item.type,
+                img: undefined,
+                isPopular: item.isPopular,
+                containsNuts: item.containsNuts,
+              };
+              return <RegMenuItem key={i} itemData={data} />;
+            })}
+        </div>
       </div>
     </div>
   );
@@ -71,7 +90,7 @@ export function SideImgMenuBlock({ name, img }: { name: string; img: string }) {
   return (
     <div className="grid">
       <span id={name} className="block h-10 -mt-10 invisible" />
-      <h2 className="text-center font-fjalla-one tracking-wider text-4xl text-[#bc9a6c]">
+      <h2 className="text-center tracking-wider text-4xl text-[#bc9a6c]">
         {name}
       </h2>
       <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
@@ -102,23 +121,42 @@ export function RegularMenuBlock({ name }: { name: string }) {
   return (
     <div className="grid">
       <span id={name} className="block h-10 -mt-10 invisible" />
-      <h2 className="text-center font-fjalla-one tracking-wider text-4xl text-[#bc9a6c]">
+      <h2 className="text-center tracking-wider text-4xl text-[#bc9a6c]">
         {name}
       </h2>
       <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
-        {menu
-          .get(name.toLowerCase())
-          ?.sort((a, b) => a.name.localeCompare(b.name))
-          .map((item: SanityItemData, i: number) => {
-            const data: ItemData = {
-              name: item.name,
-              type: item.type,
-              img: undefined,
-              isPopular: item.isPopular,
-              containsNuts: item.containsNuts,
-            };
-            return <RegMenuItem key={i} itemData={data} />;
-          })}
+        <div>
+          {menu
+            .get(name.toLowerCase())
+            ?.slice(0, menu.get(name.toLowerCase())!.length / 2)
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((item: SanityItemData, i: number) => {
+              const data: ItemData = {
+                name: item.name,
+                type: item.type,
+                img: undefined,
+                isPopular: item.isPopular,
+                containsNuts: item.containsNuts,
+              };
+              return <RegMenuItem key={i} itemData={data} />;
+            })}
+        </div>
+        <div>
+          {menu
+            .get(name.toLowerCase())
+            ?.slice(menu.get(name.toLowerCase())!.length / 2)
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((item: SanityItemData, i: number) => {
+              const data: ItemData = {
+                name: item.name,
+                type: item.type,
+                img: undefined,
+                isPopular: item.isPopular,
+                containsNuts: item.containsNuts,
+              };
+              return <RegMenuItem key={i} itemData={data} />;
+            })}
+        </div>
       </div>
     </div>
   );

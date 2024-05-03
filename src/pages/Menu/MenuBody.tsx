@@ -12,13 +12,13 @@ export default function MenuBody() {
       <div className="grid grid-flow-col m-1 justify-center">
         <div className="flex items-center justify-center w-fit p-2">
           <HeartSVG width="3" />
-          <p className="text-center text-dark-blue font-fjalla-one text-2xs tracking-widest font-thin p-1">
+          <p className="text-center text-dark-blue text-xs tracking-widest p-1">
             = popular
           </p>
         </div>
         <div className="flex items-center justify-center w-fit p-2">
           <NutSVG width="3" />
-          <p className="text-center text-dark-blue font-fjalla-one text-2xs tracking-widest font-thin p-1">
+          <p className="text-center text-dark-blue text-xs tracking-widest p-1">
             = contains nuts
           </p>
         </div>
