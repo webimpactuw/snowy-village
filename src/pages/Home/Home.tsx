@@ -12,7 +12,7 @@ export default function Home() {
     <>
     {/* <div className="p-20 grid grid-flow-col bg-ice-blue"> */}
 
-    <div className="pl-20 pt-20 pr-20 flex bg-light-blue items-center justify-items-center">
+    <div className="pl-20 pt-20 pr-20 flex bg-light-blue items-center justify-items-center font-kumbh-sans">
 
         {/* <div className="row-start-1 float-left flex-col grow"> */}
         <div className="flex-col md:w-[30%] p-0">
