@@ -5,22 +5,14 @@ import History from "./pages/AboutUs/History";
 import Locations from "./pages/AboutUs/Locations";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-// import Navbar from "./components/Navbar";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/AboutUs/About";
-<<<<<<< HEAD
-// import SidebarPro from "./components/SidebarPro";
 import Navbar from "./components/Navbar";
-// import { DaisyNav } from "./components/DaisyNav";
-=======
 import Footer from "./components/footer";
->>>>>>> 35c4702ac35289ab1f4a44632e66b3c453f4019e
 
 function App() {
   return (
     <>
-      {/* <DaisyNav /> */}
-      {/* <SidebarPro /> */}
       <Navbar/>
       
       <div>
