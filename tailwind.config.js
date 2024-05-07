@@ -38,6 +38,7 @@ export default {
         "sage-green": colorNames.sage_green,
         "dark-green": colorNames.dark_green,
         "dark-blue": colorNames.dark_blue,
+        "gold": colorNames.gold,
         "aquamarine-blue": colorNames.aquamarine_blue,
         beige: colorNames.beige,
       },
@@ -74,5 +75,4 @@ export default {
       },
     },
   },
-  plugins: [],
 };
