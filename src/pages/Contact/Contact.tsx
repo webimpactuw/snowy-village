@@ -4,6 +4,7 @@ import SampleText from "../../components/SampleText";
 import HiringImage from "./Hiring.jpg";
 import CollabImage from "./Collab.jpg";
 import Header from "./Header";
+import { Link } from "react-router-dom";
 
 export default function Contact() {
 
@@ -22,24 +23,35 @@ export default function Contact() {
 
   return <div className="flex-col items-center bg-ice-blue">
 
-      <Header />
+      <Header />  
 
-      <div className="flex flex-col w-full md:pl-[20%] md:pr-[20%] md:p-8 bg-beige">
-        <div className="flex">
-          <img src={HiringImage} className="w-1/2 p-3"/>
-          <div className="p-3">
+      <Link to={{
+        pathname: '/contact/hiring'
+      }}/>
+
+
+      <span id="hiring"/>
+      <div className="flex flex-col w-full pt-10 md:pl-[20%] md:pr-[20%] md:p-8 bg-beige">
+        
+        <div className="flex items-center">
+          <img src={HiringImage} className="w-1/2 p-3 mx-auto rounded-md"/>
+        </div>
+
+
+        <div className="p-3">
             <h1 className="text-bold">We're Hiring!</h1>
             <p>Let’s make some sweets, and spread the joys around us. Come join our Village!</p>
           </div>
-        </div>
 
         <p>Want to gain experience with making amazing desserts? We're looking for...</p>
-        <button>Apply Now</button>
+        <button className="bg-aquamarine-blue hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">Apply Now</button>
       </div>
 
-      <div className="flex flex-col w-full p-5 bg-ice-blue md:pl-[20%] md:pr-[20%] md:p-8">
+      <span id="collab"/>
+      <div className="flex flex-col w-full p-5 bg-ice-blue text-white md:pl-[20%] md:pr-[20%] md:p-8">
+        
         <h1>Collab</h1>
-        <img src={CollabImage} className="w-1/2 p-3"/>
+        <img src={CollabImage} className="w-1/2 p-3 mx-auto"/>
         <SampleText />
 
         <div className="mt-3 mb-3">
@@ -56,7 +68,8 @@ export default function Contact() {
 
       </div>
 
-      <div className="flex flex-col w-full p-5 bg-beige md:pl-[20%] md:pr-[20%] md:p-8">
+      <span id="faq"/>
+      <div className="flex flex-col w-full p-5 bg-ice-blue md:pl-[20%] md:pr-[20%] md:p-8">
           <h1>FAQ</h1>
           <div>
             <SampleText />
