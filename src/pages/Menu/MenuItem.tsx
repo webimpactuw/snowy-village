@@ -2,6 +2,7 @@ import HeartSVG from "./HeartSVG";
 import NutSVG from "./NutSVG";
 import ItemData from "./ItemData";
 
+// Currently unused
 /** export function ImgMenuItem({ itemData }: { itemData: ItemData }) {
   return (
     <div className="grid">

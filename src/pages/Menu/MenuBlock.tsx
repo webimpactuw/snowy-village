@@ -14,6 +14,7 @@ menu.set("bingsoo", bingsoo);
 menu.set("drinks", drinks);
 menu.set("taiyaki", taiyaki);
 
+// Currently unused
 /**
 export function FeaturedMenuBlock() {
   return (
@@ -44,7 +45,7 @@ export function GalleryMenuBlock({ name }: { name: string }) {
   return (
     <div className="grid">
       <span id={name} className="block h-10 -mt-10 invisible" />
-      <h2 className="text-center tracking-wider text-4xl text-[#bc9a6c]">
+      <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
         {name}
       </h2>
       <FeaturedGallery />
@@ -86,21 +87,38 @@ export function GalleryMenuBlock({ name }: { name: string }) {
   );
 }
 
-export function SideImgMenuBlock({ name, img }: { name: string; img: string }) {
+export function ImgMenuBlock({ name, img }: { name: string; img: string }) {
   return (
     <div className="grid">
       <span id={name} className="block h-10 -mt-10 invisible" />
-      <h2 className="text-center tracking-wider text-4xl text-[#bc9a6c]">
+      <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
         {name}
       </h2>
+      <div className="w-1/2 md:w-1/3 lg:w-1/5 mx-auto mt-6 flex justify-center p-2 border-4 border-grey rounded-lg">
+        <img src={img} className="w-full" />
+      </div>
       <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
-        <div className="p-2 rounded-lg border-4 border-grey">
-          <img src={img} className="rounded-lg" />
+        <div>
+          {menu
+            .get(name.toLowerCase())
+            ?.slice(0, menu.get(name.toLowerCase())!.length / 2)
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((item: SanityItemData, i: number) => {
+              const data: ItemData = {
+                name: item.name,
+                type: item.type,
+                img: undefined,
+                isPopular: item.isPopular,
+                containsNuts: item.containsNuts,
+              };
+              return <RegMenuItem key={i} itemData={data} />;
+            })}
         </div>
         <div>
           {menu
             .get(name.toLowerCase())
-            ?.sort((a, b) => a.name.localeCompare(b.name))
+            ?.slice(menu.get(name.toLowerCase())!.length / 2)
+            .sort((a, b) => a.name.localeCompare(b.name))
             .map((item: SanityItemData, i: number) => {
               const data: ItemData = {
                 name: item.name,
@@ -121,7 +139,7 @@ export function RegularMenuBlock({ name }: { name: string }) {
   return (
     <div className="grid">
       <span id={name} className="block h-10 -mt-10 invisible" />
-      <h2 className="text-center tracking-wider text-4xl text-[#bc9a6c]">
+      <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
         {name}
       </h2>
       <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
