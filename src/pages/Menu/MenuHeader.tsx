@@ -34,7 +34,7 @@ export default function MenuHeader() {
 
   return (
     <div className="bg-dark-blue pt-12 pb-2 grid justify-center">
-      <h1 className="text-center text-white font-fjalla-one text-6xl tracking-widest mb-1">
+      <h1 className="text-center text-white text-6xl tracking-widest mb-1">
         MENU
       </h1>
       <div className="grid grid-flow-col justify-center items-center">
@@ -50,7 +50,7 @@ export default function MenuHeader() {
         <UnderlineSVG />
       </div>
       <button
-        className="bg-[#ff3008] text-center text-white font-fjalla-one text-2xs tracking-wider my-3 mx-auto py-1 px-3"
+        className="bg-[#ff3008] text-center text-white text-2xs tracking-wider my-3 mx-auto py-1 px-3"
         onClick={() => setIsOpen(true)}
       >
         Order on Doordash
@@ -75,19 +75,19 @@ export default function MenuHeader() {
         <div className="grid grid-flow-row grid-cols-2 items-center justify-around h-full">
           <a
             href="https://www.doordash.com/store/snowy-village-seattle-24422697/"
-            className="bg-[#ff3008] text-center text-white font-fjalla-one text-sm tracking-wider my-3 mx-auto py-1 px-3 rounded-md border-2 border-dark-navy"
+            className="bg-[#ff3008] text-center text-white text-sm tracking-wider my-3 mx-auto py-1 px-3 rounded-md border-2 border-dark-navy"
           >
             SEATTLE
           </a>
           <a
             href="https://www.doordash.com/en-US/store/snowy-village-bellevue-24422669/"
-            className="bg-[#ff3008] text-center text-white font-fjalla-one text-sm tracking-wider my-3 mx-auto py-1 px-3 rounded-md border-2 border-dark-navy"
+            className="bg-[#ff3008] text-center text-white text-sm tracking-wider my-3 mx-auto py-1 px-3 rounded-md border-2 border-dark-navy"
           >
             BELLEVUE
           </a>
           <a
             href="https://www.doordash.com/store/snowy-village-portland-24729927/"
-            className="bg-[#ff3008] text-center text-white font-fjalla-one text-sm tracking-wider my-3 mx-auto py-1 px-3 rounded-md border-2 border-dark-navy"
+            className="bg-[#ff3008] text-center text-white text-sm tracking-wider my-3 mx-auto py-1 px-3 rounded-md border-2 border-dark-navy"
           >
             PORTLAND
           </a>
