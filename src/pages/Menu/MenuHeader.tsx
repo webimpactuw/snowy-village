@@ -99,6 +99,8 @@ export default function MenuHeader() {
         <MenuLink text="TAIYAKI" />
         <DividerBar />
         <MenuLink text="DRINKS" />
+        <DividerBar />
+        <MenuLink text="ADDONS" />
       </div>
     </div>
   );
