@@ -65,7 +65,7 @@ function Navbar() {
           ${isSidebarOpen ? "sticky z-2  h-screen border-r-gray-900 bg-background-color mx-auto" : "hidden"}`}>
             
             <Sidebar>
-              <Menu className="bg-ice-blue text-2xl"
+              <Menu className="bg-ice-blue text-2xl p-5"
                 menuItemStyles={{
                   button: ({ level, active }) => {
                     // only apply styles on first level elements of the tree
