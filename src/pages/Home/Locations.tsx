@@ -55,7 +55,7 @@ export default function Locations() {
               <ul role="list" className="mt-6 flex gap-x-6">
                 <li>
                   <a
-                    href={person.xUrl}
+                    // href={person.xUrl}
                     className="text-gray-400 hover:text-gray-500"
                   >
                     <span className="sr-only">X</span>
@@ -63,7 +63,7 @@ export default function Locations() {
                 </li>
                 <li>
                   <a
-                    href={person.linkedinUrl}
+                    // href={person.linkedinUrl}
                     className="text-gray-400 hover:text-gray-500"
                   ></a>
                 </li>
