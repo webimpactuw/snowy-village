@@ -2,12 +2,16 @@
 export default function Header() {
 
   return <>
-      <div className="mx-auto h-16 w-3/4 pt-10 pb-20 mb-2 text-aquamarine-blue text-center">
-          <h1 className="font-bold text-4xl">CONTACT US</h1>
+      <div className="text-aquamarine-blue text-center p-5">
 
-          <div>
-          Here are various way to contact us. We love to hear from you!
+          <div className="">
+            <h1 className="font-bold text-4xl md:text-6xl">CONTACT US</h1>
+
+            <p className="md:text-3xl">
+            Here are various way to contact us. We love to hear from you!
+            </p>
           </div>
+          
           
       </div>
     </>

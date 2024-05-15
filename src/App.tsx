@@ -13,11 +13,12 @@ import { NewNavbar } from "./components/NewNavbar";
 
 function App() {
   return (
-    <>
-      {/* <Navbar/> */}
+    <div className="relative">
+      <div className="sticky relative top-0 z-10">
       <NewNavbar />
+      </div>
       
-      <div>
+      <div className="relative z-100">
         <Routes>
           <Route path="/" element={<Home />} />
 
@@ -41,7 +42,7 @@ function App() {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

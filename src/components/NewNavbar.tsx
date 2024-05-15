@@ -6,17 +6,17 @@ export const NewNavbar = () => {
 
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const sideNavClicked = (): void => {
-    if(isSidebarOpen) {
-      setIsSidebarOpen(false);
-    } else {
-      setIsSidebarOpen(true);
-    }
-  }
+  // const sideNavClicked = (): void => {
+  //   if(isSidebarOpen) {
+  //     setIsSidebarOpen(false);
+  //   } else {
+  //     setIsSidebarOpen(true);
+  //   }
+  // }
 
   
   return (
-    <div className="sticky top-0 z-0">
+    <div className="sticky top-0 z-0 object-cover relative">
 
 <div className="drawer font-kumbh-sans">
   <input id="my-drawer-3" type="checkbox" className="drawer-toggle" /> 
@@ -44,19 +44,29 @@ export const NewNavbar = () => {
 
   <div className="drawer-side">
     <label htmlFor="my-drawer-3" aria-label="close sidebar" className="drawer-overlay"></label> 
-    <ul className="menu p-4 w-80 min-h-full bg-base-200">
+    <ul className="sticky menu p-4 pt-10 pl-5 w-80 min-h-full bg-base-200 text-xl">
       {/* Sidebar content here */}
-      <li><a>Sidebar Item 1</a></li>
-      <li><a>Sidebar Item 2</a></li>
-      <div className="collapse collapse-arrow bg-base-200">
-          <input type="radio" name="my-accordion-2" defaultChecked /> 
-          <div className="collapse-title text-xl font-medium">
-            Contact
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/menu">Menu</Link></li>
+        <li><Link to="/gallery">Gallery</Link></li>
+        
+          <div className="collapse collapse-arrow bg-base-200">
+          <input type="checkbox" name="my-accordion-2"/> 
+          <div className="collapse-title font-medium">
+          <Link to="/contact">Contact</Link>
           </div>
           <div className="collapse-content"> 
-            <p>hello</p>
+            <ul>
+              <li>
+              <Link to="/contact#hiring">Hiring </Link>
+              <Link to="/contact#collab">Collab </Link>
+              </li>
+            </ul>
+
           </div>
-        </div>
+        </div> 
+
+        <li><Link to="/aboutus">About Us</Link></li>
     </ul>
   </div>
 </div>
