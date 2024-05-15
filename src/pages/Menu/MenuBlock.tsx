@@ -1,4 +1,4 @@
-import { RegMenuItem } from "./MenuItem";
+import { MenuItem } from "./MenuItem";
 import ItemData from "./ItemData";
 import { getMenuItems } from "../../../sv-sanity/SanityClient";
 import { SanityItemData } from "./SanityItemData";
@@ -23,7 +23,10 @@ export function BingsooMenuBlock() {
       </h2>
       <FeaturedGallery />
       <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
-        <div>
+        <div className="grid justify-center content-start">
+          <h3 className="text-md tracking-wider text-[#00729d] text-center font-bold">
+            FRUITS
+          </h3>
           {bingsoofruits
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((item: SanityItemData, i: number) => {
@@ -33,10 +36,13 @@ export function BingsooMenuBlock() {
                 isPopular: item.isPopular,
                 containsNuts: item.containsNuts,
               };
-              return <RegMenuItem key={i} itemData={data} />;
+              return <MenuItem key={i} itemData={data} />;
             })}
         </div>
-        <div>
+        <div className="grid justify-center content-start">
+          <h3 className="text-md tracking-wider text-center text-[#00729d] font-bold">
+            CLASSICS
+          </h3>
           {bingsooclassics
             .sort((a, b) => a.name.localeCompare(b.name))
             .map((item: SanityItemData, i: number) => {
@@ -46,7 +52,7 @@ export function BingsooMenuBlock() {
                 isPopular: item.isPopular,
                 containsNuts: item.containsNuts,
               };
-              return <RegMenuItem key={i} itemData={data} />;
+              return <MenuItem key={i} itemData={data} />;
             })}
         </div>
       </div>
@@ -61,7 +67,7 @@ export function TaiyakiMenuBlock() {
       <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
         TAIYAKI
       </h2>
-      <div className="w-1/2 md:w-1/3 lg:w-1/5 mx-auto mt-6 flex justify-center p-2 border-4 border-grey rounded-lg">
+      <div className="w-1/2 md:w-1/3 lg:w-1/5 mx-auto mt-6 flex justify-center p-2">
         <img src="taiyaki.jpg" className="w-full" />
       </div>
       <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
@@ -75,7 +81,7 @@ export function TaiyakiMenuBlock() {
                 isPopular: item.isPopular,
                 containsNuts: item.containsNuts,
               };
-              return <RegMenuItem key={i} itemData={data} />;
+              return <MenuItem key={i} itemData={data} />;
             })}
         </div>
         <div>
@@ -88,7 +94,7 @@ export function TaiyakiMenuBlock() {
                 isPopular: item.isPopular,
                 containsNuts: item.containsNuts,
               };
-              return <RegMenuItem key={i} itemData={data} />;
+              return <MenuItem key={i} itemData={data} />;
             })}
         </div>
       </div>
@@ -113,7 +119,7 @@ export function DrinksMenuBlock() {
               isPopular: item.isPopular,
               containsNuts: item.containsNuts,
             };
-            return <RegMenuItem key={i} itemData={data} />;
+            return <MenuItem key={i} itemData={data} />;
           })}
       </div>
     </div>
@@ -137,7 +143,7 @@ export function AddonsMenuBlock() {
               isPopular: item.isPopular,
               containsNuts: item.containsNuts,
             };
-            return <RegMenuItem key={i} itemData={data} />;
+            return <MenuItem key={i} itemData={data} />;
           })}
       </div>
     </div>
