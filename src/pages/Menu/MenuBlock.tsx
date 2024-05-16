@@ -16,44 +16,49 @@ const addons: Array<SanityItemData> = await getMenuItems("addons");
 
 export function BingsooMenuBlock() {
   return (
-    <div className="grid">
+    <div className="grid p-2 md:mb-6">
       <span id="BINGSOO" className="block h-10 -mt-10 invisible" />
-      <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
-        BINGSOO
-      </h2>
-      <FeaturedGallery />
-      <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
-        <div className="grid justify-center content-start">
-          <h3 className="text-md tracking-wider text-[#00729d] text-center font-bold">
-            FRUITS
-          </h3>
-          {bingsoofruits
-            .sort((a, b) => a.name.localeCompare(b.name))
-            .map((item: SanityItemData, i: number) => {
-              const data: ItemData = {
-                name: item.name,
-                type: item.type,
-                isPopular: item.isPopular,
-                containsNuts: item.containsNuts,
-              };
-              return <MenuItem key={i} itemData={data} />;
-            })}
+      <div className="flex flex-col md:flex-row w-11/12 md:w-3/4 m-auto md:justify-center md:gap-6">
+        <div className="w-3/4 m-auto">
+          <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
+            BINGSOO
+          </h2>
+          <FeaturedGallery />
         </div>
-        <div className="grid justify-center content-start">
-          <h3 className="text-md tracking-wider text-center text-[#00729d] font-bold">
-            CLASSICS
-          </h3>
-          {bingsooclassics
-            .sort((a, b) => a.name.localeCompare(b.name))
-            .map((item: SanityItemData, i: number) => {
-              const data: ItemData = {
-                name: item.name,
-                type: item.type,
-                isPopular: item.isPopular,
-                containsNuts: item.containsNuts,
-              };
-              return <MenuItem key={i} itemData={data} />;
-            })}
+        <div className="grid px-4 py-4 grid-cols-3 justify-items-center align-center md:w-3/4">
+          <div className="grid justify-center content-start">
+            <h3 className="text-md tracking-wider text-[#00729d] text-center font-bold underline underline-offset-4 decoration-2 decoration-[#7dd4e5] my-2">
+              FRUITS
+            </h3>
+            {bingsoofruits
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((item: SanityItemData, i: number) => {
+                const data: ItemData = {
+                  name: item.name,
+                  type: item.type,
+                  isPopular: item.isPopular,
+                  containsNuts: item.containsNuts,
+                };
+                return <MenuItem key={i} itemData={data} />;
+              })}
+          </div>
+          <div className="bg-[#7dd4e5] w-1 mt-10"></div>
+          <div className="grid justify-center content-start">
+            <h3 className="text-md tracking-wider text-center text-[#00729d] font-bold underline underline-offset-4 decoration-2 decoration-[#7dd4e5] my-2">
+              CLASSICS
+            </h3>
+            {bingsooclassics
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((item: SanityItemData, i: number) => {
+                const data: ItemData = {
+                  name: item.name,
+                  type: item.type,
+                  isPopular: item.isPopular,
+                  containsNuts: item.containsNuts,
+                };
+                return <MenuItem key={i} itemData={data} />;
+              })}
+          </div>
         </div>
       </div>
     </div>
@@ -62,40 +67,51 @@ export function BingsooMenuBlock() {
 
 export function TaiyakiMenuBlock() {
   return (
-    <div className="grid">
+    <div className="grid p-2 md:mb-6">
       <span id="TAIYAKI" className="block h-10 -mt-10 invisible" />
-      <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
-        TAIYAKI
-      </h2>
-      <div className="w-1/2 md:w-1/3 lg:w-1/5 mx-auto mt-6 flex justify-center p-2">
-        <img src="taiyaki.jpg" className="w-full" />
-      </div>
-      <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
-        <div>
-          {taiyakisweet
-            .sort((a, b) => a.name.localeCompare(b.name))
-            .map((item: SanityItemData, i: number) => {
-              const data: ItemData = {
-                name: item.name,
-                type: item.type,
-                isPopular: item.isPopular,
-                containsNuts: item.containsNuts,
-              };
-              return <MenuItem key={i} itemData={data} />;
-            })}
+      <div className="flex flex-col md:flex-row w-11/12 md:w-3/4 m-auto md:justify-center md:gap-6">
+        <div className="w-3/4 m-auto">
+          <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
+            TAIYAKI
+          </h2>
+          <div className="w-1/2 mx-auto mt-6 flex justify-center p-2">
+            <img src="taiyaki.jpg" className="w-full" />
+          </div>
         </div>
-        <div>
-          {taiyakisavory
-            .sort((a, b) => a.name.localeCompare(b.name))
-            .map((item: SanityItemData, i: number) => {
-              const data: ItemData = {
-                name: item.name,
-                type: item.type,
-                isPopular: item.isPopular,
-                containsNuts: item.containsNuts,
-              };
-              return <MenuItem key={i} itemData={data} />;
-            })}
+        <div className="grid px-4 py-4 grid-cols-3 justify-items-center align-center md:w-3/4">
+          <div className="grid justify-center content-start">
+            <h3 className="text-md tracking-wider text-center text-[#00729d] font-bold underline underline-offset-4 decoration-2 decoration-[#7dd4e5] my-2">
+              SWEET
+            </h3>
+            {taiyakisweet
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((item: SanityItemData, i: number) => {
+                const data: ItemData = {
+                  name: item.name,
+                  type: item.type,
+                  isPopular: item.isPopular,
+                  containsNuts: item.containsNuts,
+                };
+                return <MenuItem key={i} itemData={data} />;
+              })}
+          </div>
+          <div className="bg-[#7dd4e5] w-1 mt-10"></div>
+          <div className="grid justify-center content-start">
+            <h3 className="text-md tracking-wider text-center text-[#00729d] font-bold underline underline-offset-4 decoration-2 decoration-[#7dd4e5] my-2">
+              SAVORY
+            </h3>
+            {taiyakisavory
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((item: SanityItemData, i: number) => {
+                const data: ItemData = {
+                  name: item.name,
+                  type: item.type,
+                  isPopular: item.isPopular,
+                  containsNuts: item.containsNuts,
+                };
+                return <MenuItem key={i} itemData={data} />;
+              })}
+          </div>
         </div>
       </div>
     </div>
@@ -104,23 +120,41 @@ export function TaiyakiMenuBlock() {
 
 export function DrinksMenuBlock() {
   return (
-    <div className="grid">
+    <div className="grid p-2 w-11/12 md:w-1/2 m-auto md:mb-6">
       <span id="DRINKS" className="block h-10 -mt-10 invisible" />
       <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
         DRINKS
       </h2>
-      <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
-        {drinks
-          .sort((a, b) => a.name.localeCompare(b.name))
-          .map((item: SanityItemData, i: number) => {
-            const data: ItemData = {
-              name: item.name,
-              type: item.type,
-              isPopular: item.isPopular,
-              containsNuts: item.containsNuts,
-            };
-            return <MenuItem key={i} itemData={data} />;
-          })}
+      <div className="grid px-4 py-4 grid-cols-3 justify-items-center align-center">
+        <div className="grid justify-center content-start">
+          {drinks
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .slice(drinks.length / 2)
+            .map((item: SanityItemData, i: number) => {
+              const data: ItemData = {
+                name: item.name,
+                type: item.type,
+                isPopular: item.isPopular,
+                containsNuts: item.containsNuts,
+              };
+              return <MenuItem key={i} itemData={data} />;
+            })}
+        </div>
+        <div className="bg-[#7dd4e5] w-1"></div>
+        <div className="grid justify-center content-start">
+          {drinks
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .slice(0, drinks.length / 2)
+            .map((item: SanityItemData, i: number) => {
+              const data: ItemData = {
+                name: item.name,
+                type: item.type,
+                isPopular: item.isPopular,
+                containsNuts: item.containsNuts,
+              };
+              return <MenuItem key={i} itemData={data} />;
+            })}
+        </div>
       </div>
     </div>
   );
@@ -128,23 +162,41 @@ export function DrinksMenuBlock() {
 
 export function AddonsMenuBlock() {
   return (
-    <div className="grid">
+    <div className="grid p-2 w-11/12 md:w-1/2 m-auto md:mb-6">
       <span id="ADDONS" className="block h-10 -mt-10 invisible" />
       <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
         ADD-ONS
       </h2>
-      <div className="grid px-4 py-4 gap-x-4 grid-cols-2">
-        {addons
-          .sort((a, b) => a.name.localeCompare(b.name))
-          .map((item: SanityItemData, i: number) => {
-            const data: ItemData = {
-              name: item.name,
-              type: item.type,
-              isPopular: item.isPopular,
-              containsNuts: item.containsNuts,
-            };
-            return <MenuItem key={i} itemData={data} />;
-          })}
+      <div className="grid px-4 py-4 grid-cols-3 justify-items-center align-center">
+        <div className="grid justify-center content-start">
+          {addons
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .slice(addons.length / 2)
+            .map((item: SanityItemData, i: number) => {
+              const data: ItemData = {
+                name: item.name,
+                type: item.type,
+                isPopular: item.isPopular,
+                containsNuts: item.containsNuts,
+              };
+              return <MenuItem key={i} itemData={data} />;
+            })}
+        </div>
+        <div className="bg-[#7dd4e5] w-1"></div>
+        <div className="grid justify-center content-start">
+          {addons
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .slice(0, addons.length / 2)
+            .map((item: SanityItemData, i: number) => {
+              const data: ItemData = {
+                name: item.name,
+                type: item.type,
+                isPopular: item.isPopular,
+                containsNuts: item.containsNuts,
+              };
+              return <MenuItem key={i} itemData={data} />;
+            })}
+        </div>
       </div>
     </div>
   );

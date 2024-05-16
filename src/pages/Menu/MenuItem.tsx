@@ -4,7 +4,7 @@ import ItemData from "./ItemData";
 
 export function MenuItem({ itemData }: { itemData: ItemData }) {
   return (
-    <div className="grid grid-flow-col gap-2 justify-start items-center p-1">
+    <div className="grid grid-flow-col gap-1 justify-start items-center p-1">
       <p className="text-md tracking-wider text-[#00729d] font-bold">
         {itemData.name}
       </p>
