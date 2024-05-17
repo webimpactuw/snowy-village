@@ -104,70 +104,38 @@ function Navbar() {
       </div>
 
       <div className="sticky z-1 overflow-hidden top-0">
-        <div
-          className={`
-          ${isSidebarOpen ? "sticky z-2  h-screen border-r-gray-900 bg-background-color mx-auto" : "hidden"}`}
-        >
-          <Sidebar>
-            <Menu
-              className="bg-ice-blue text-2xl"
-              menuItemStyles={{
-                button: ({ level, active }) => {
-                  // only apply styles on first level elements of the tree
-                  if (level === 0)
-                    return {
-                      backgroundColor: active ? "#eecef9" : undefined,
-                    };
-                },
-              }}
-            >
-              <MenuItem
-                component={<Link to="/home" />}
-                onClick={() => sideNavClicked()}
-              >
-                Home
-              </MenuItem>
-              <MenuItem
-                component={<Link to="/menu" />}
-                onClick={() => sideNavClicked()}
-              >
-                Menu
-              </MenuItem>
-              <MenuItem
-                component={<Link to="/gallery" />}
-                onClick={() => sideNavClicked()}
-              >
-                Gallery
-              </MenuItem>
-              <SubMenu label="Contact">
-                <MenuItem onClick={() => sideNavClicked()}>
-                  <a href={`/contact#hiring`}>Hiring</a>
-                </MenuItem>
-                <MenuItem onClick={() => sideNavClicked()}>
-                  <a href={`/contact#collab`}>Collab</a>
-                </MenuItem>
-                <MenuItem onClick={() => sideNavClicked()}>
-                  <a href={`/contact#faq`}>FAQ</a>
-                </MenuItem>
-              </SubMenu>
-              <SubMenu label="About Us">
-                <MenuItem onClick={() => sideNavClicked()}>
-                  {" "}
-                  <a href={`/aboutus#team`}>Team</a>{" "}
-                </MenuItem>
-                <MenuItem onClick={() => sideNavClicked()}>
-                  {" "}
-                  <a href={`/aboutus#story`}>Story</a>{" "}
-                </MenuItem>
-                <MenuItem onClick={() => sideNavClicked()}>
-                  {" "}
-                  <a href={`/aboutus#locations`}>Locations</a>{" "}
-                </MenuItem>
-              </SubMenu>
-            </Menu>
-          </Sidebar>
 
-          {/* <ul className="z-0 text-4xl pt-6 pl-5">
+      <div className={`
+          ${isSidebarOpen ? "sticky z-2  h-screen border-r-gray-900 bg-background-color mx-auto" : "hidden"}`}>
+            
+            <Sidebar>
+              <Menu className="bg-ice-blue text-2xl p-5"
+                menuItemStyles={{
+                  button: ({ level, active }) => {
+                    // only apply styles on first level elements of the tree
+                    if (level === 0)
+                      return {
+                        backgroundColor: active ? '#eecef9' : undefined,
+                      };
+                  },
+                }}>
+                <MenuItem component={<Link to="/home"/>} onClick={() => sideNavClicked()}>Home</MenuItem>
+                <MenuItem component={<Link to="/menu"/>} onClick={() => sideNavClicked()}>Menu</MenuItem>
+                <MenuItem component={<Link to="/gallery" />} onClick={() => sideNavClicked()}>Gallery</MenuItem>
+                <SubMenu label="Contact">
+                  <MenuItem onClick={() => sideNavClicked()}><a href={`/contact#hiring`}>Hiring</a></MenuItem>
+                  <MenuItem onClick={() => sideNavClicked()}><a href={`/contact#collab`}>Collab</a></MenuItem>
+                  <MenuItem onClick={() => sideNavClicked()}><a href={`/contact#faq`}>FAQ</a></MenuItem>
+                </SubMenu>
+                <SubMenu label="About Us">
+                  <MenuItem onClick={() => sideNavClicked()} > <a href={`/aboutus#team`}>Team</a> </MenuItem>
+                  <MenuItem onClick={() => sideNavClicked()}> <a href={`/aboutus#story`}>Story</a> </MenuItem>
+                  <MenuItem onClick={() => sideNavClicked()}> <a href={`/aboutus#locations`}>Locations</a> </MenuItem>
+                </SubMenu>
+              </Menu>
+            </Sidebar>
+            
+            {/* <ul className="z-0 text-4xl pt-6 pl-5">
           
             {SIDENAV_ITEMS.map((item, idx) => {
 

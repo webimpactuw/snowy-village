@@ -7,15 +7,15 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/AboutUs/About";
-import Navbar from "./components/Navbar";
+// import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
+import AppLayout from "./components/AppLayout";
+// import NewNavbar from "./components/NewNavbar";
 
 function App() {
   return (
-    <>
-      <Navbar/>
-      
-      <div>
+    <AppLayout>
+      <div className="">
         <Routes>
           <Route path="/" element={<Home />} />
 
@@ -39,7 +39,7 @@ function App() {
       </div>
 
       <Footer />
-    </>
+    </AppLayout>
   );
 }
 

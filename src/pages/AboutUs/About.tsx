@@ -18,8 +18,8 @@ export default function About() {
       <div className=" bg-white pb-20">
       <div className="flex flex-col md:flex-row w-full h-auto bg-white p-5">
         <div className="flex-none w-full md:w-80 relative">
-          <div className="md:flex-none w-full md:w-80 h-48 relative">
-            <img src={testURL} alt="Team" className="absolute inset-0 w-full h-full object-cover" />
+          <div className="md:flex-none w-full md:w-80 h-48">
+            <img src={testURL} alt="Team" className="h-full mx-auto" />
           </div>
         </div>
         <div className="flex-grow p-5" >
@@ -41,8 +41,8 @@ export default function About() {
             <p className="text-text-color-2 font-fjalla-one-">Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team.</p>
           </div>
           <div className="flex-none w-full md:w-80 relative">
-            <div className="md:flex-none w-full md:w-80 h-48 relative">
-              <img src={testURL} alt="Team" className="absolute inset-0 w-full h-full object-cover" />
+            <div className="md:flex-none w-full md:w-80 h-48">
+              <img src={testURL} alt="Team" className="mx-auto" />
             </div>
           </div>
         </div>
