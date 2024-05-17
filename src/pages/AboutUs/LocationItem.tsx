@@ -6,16 +6,18 @@ export default function LocationItem({
   locationData: LocationData;
 }) {
   return (
-    <div className="grid p-2 gap-4">
-      <h1 className="text-center font-fjalla-one text-3xl tracking-wider text-dark-blue">
-        {locationData.name}
-      </h1>
-      <div className="p-2">
-        <img
-          className="m-auto"
-          src={locationData.img}
-          alt={locationData.name}
-        />
+    <div className="grid p-2 gap-4 mt-6">
+      <div>
+        <h1 className="text-center font-fjalla-one text-3xl tracking-wider text-dark-blue">
+          {locationData.name}
+        </h1>
+        <div className="p-2">
+          <img
+            className="m-auto rounded-2xl"
+            src={locationData.img}
+            alt={locationData.name}
+          />
+        </div>
       </div>
       <div>
         <div className="grid grid-flow-col items-center justify-center gap-4">
