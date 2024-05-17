@@ -27,7 +27,7 @@ export function BingsooMenuBlock() {
         </div>
         <div className="grid px-4 py-4 grid-cols-3 justify-items-center align-center md:w-3/4">
           <div className="grid justify-center content-start">
-            <h3 className="text-md tracking-wider text-[#00729d] text-center font-bold underline underline-offset-4 decoration-2 decoration-[#7dd4e5] my-2">
+            <h3 className="text-md tracking-wider text-[#00729d] text-center font-bold underline underline-offset-4 decoration-2 decoration-gray-300 my-2">
               FRUITS
             </h3>
             {bingsoofruits
@@ -42,9 +42,9 @@ export function BingsooMenuBlock() {
                 return <MenuItem key={i} itemData={data} />;
               })}
           </div>
-          <div className="bg-[#7dd4e5] w-1 mt-10"></div>
+          <div className="bg-gray-300 w-0.5 mt-10"></div>
           <div className="grid justify-center content-start">
-            <h3 className="text-md tracking-wider text-center text-[#00729d] font-bold underline underline-offset-4 decoration-2 decoration-[#7dd4e5] my-2">
+            <h3 className="text-md tracking-wider text-center text-[#00729d] font-bold underline underline-offset-4 decoration-2 decoration-gray-300 my-2">
               CLASSICS
             </h3>
             {bingsooclassics
@@ -69,18 +69,18 @@ export function TaiyakiMenuBlock() {
   return (
     <div className="grid p-2 md:mb-6">
       <span id="TAIYAKI" className="block h-10 -mt-10 invisible" />
-      <div className="flex flex-col md:flex-row w-11/12 md:w-3/4 m-auto md:justify-center md:gap-6">
+      <div className="flex flex-col md:flex-row-reverse w-11/12 md:w-3/4 m-auto md:justify-center md:gap-6">
         <div className="w-3/4 m-auto">
           <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
             TAIYAKI
           </h2>
-          <div className="w-1/2 mx-auto mt-6 flex justify-center p-2">
-            <img src="taiyaki.jpg" className="w-full" />
+          <div className="w-full mx-auto -mt-4 -mb-4 md:-mt-16 md:-mb-8 justify-center">
+            <img src="taiyaki.png" className="" />
           </div>
         </div>
         <div className="grid px-4 py-4 grid-cols-3 justify-items-center align-center md:w-3/4">
           <div className="grid justify-center content-start">
-            <h3 className="text-md tracking-wider text-center text-[#00729d] font-bold underline underline-offset-4 decoration-2 decoration-[#7dd4e5] my-2">
+            <h3 className="text-md tracking-wider text-center text-[#00729d] font-bold underline underline-offset-4 decoration-2 decoration-gray-300 my-2">
               SWEET
             </h3>
             {taiyakisweet
@@ -95,9 +95,9 @@ export function TaiyakiMenuBlock() {
                 return <MenuItem key={i} itemData={data} />;
               })}
           </div>
-          <div className="bg-[#7dd4e5] w-1 mt-10"></div>
+          <div className="bg-gray-300 w-0.5 mt-10"></div>
           <div className="grid justify-center content-start">
-            <h3 className="text-md tracking-wider text-center text-[#00729d] font-bold underline underline-offset-4 decoration-2 decoration-[#7dd4e5] my-2">
+            <h3 className="text-md tracking-wider text-center text-[#00729d] font-bold underline underline-offset-4 decoration-2 decoration-gray-300 my-2">
               SAVORY
             </h3>
             {taiyakisavory
@@ -140,7 +140,7 @@ export function DrinksMenuBlock() {
               return <MenuItem key={i} itemData={data} />;
             })}
         </div>
-        <div className="bg-[#7dd4e5] w-1"></div>
+        <div className="bg-gray-300 w-0.5"></div>
         <div className="grid justify-center content-start">
           {drinks
             .sort((a, b) => a.name.localeCompare(b.name))
@@ -182,7 +182,7 @@ export function AddonsMenuBlock() {
               return <MenuItem key={i} itemData={data} />;
             })}
         </div>
-        <div className="bg-[#7dd4e5] w-1"></div>
+        <div className="bg-gray-300 w-0.5"></div>
         <div className="grid justify-center content-start">
           {addons
             .sort((a, b) => a.name.localeCompare(b.name))
