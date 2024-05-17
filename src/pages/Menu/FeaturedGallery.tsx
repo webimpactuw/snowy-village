@@ -16,7 +16,7 @@ const carouselImgs: Array<CarouselImg> = await getCarouselImgs();
 
 export default function FeaturedGallery() {
   return (
-    <div className="w-2/3 mx-auto mt-6 flex justify-center p-2 border-4 border-grey rounded-lg">
+    <div className="mt-6 flex justify-center -p-4 border-8 border-[#ffffff] rounded-3xl overflow-clip">
       <Carousel
         autoPlay
         infiniteLoop
