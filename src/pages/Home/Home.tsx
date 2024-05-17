@@ -10,7 +10,7 @@ import BlueUpWave from "./BlueUpWave";
 import Locations from "./Locations";
 export default function Home() {
   return (
-    <>
+    <div className="">
       {/* <div className="p-20 grid grid-flow-col bg-ice-blue"> */}
 
       <div className="flex bg-light-blue items-center justify-items-center gap-40 pt-14">
@@ -84,6 +84,6 @@ export default function Home() {
       <div>
         <h1>OUR COMMUNITY</h1>
       </div>
-    </>
+    </div>
   );
 }

@@ -9,16 +9,13 @@ import Contact from "./pages/Contact/Contact";
 import About from "./pages/AboutUs/About";
 // import Navbar from "./components/Navbar";
 import Footer from "./components/footer";
-import { NewNavbar } from "./components/NewNavbar";
+import AppLayout from "./components/AppLayout";
+// import NewNavbar from "./components/NewNavbar";
 
 function App() {
   return (
-    <div className="relative">
-      <div className="sticky relative top-0 z-10">
-      <NewNavbar />
-      </div>
-      
-      <div className="relative z-100">
+    <AppLayout>
+      <div className="">
         <Routes>
           <Route path="/" element={<Home />} />
 
@@ -42,7 +39,7 @@ function App() {
       </div>
 
       <Footer />
-    </div>
+    </AppLayout>
   );
 }
 
