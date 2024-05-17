@@ -58,7 +58,7 @@ export default function LocationItem({
         </div>
         {locationData.googlemapslink !== undefined ? (
           <a href={locationData.googlemapslink}>
-            <p className="text-center tracking-wide text-dark-blue">
+            <p className="text-center tracking-wide text-dark-blue underline">
               {locationData.address}
             </p>
           </a>
