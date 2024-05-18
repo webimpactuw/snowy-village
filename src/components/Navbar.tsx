@@ -3,7 +3,7 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { IconContext } from "react-icons";
-import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
+import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
 // import Sidebar from "./Sidebar";
 // import SidebarItem from "./SidebarItem";
 // import { SIDENAV_ITEMS } from "./SidebarData";
@@ -16,18 +16,17 @@ import { Sidebar, Menu, MenuItem, SubMenu } from 'react-pro-sidebar';
 // can only be open if in mobile mode, and the sidebar takes up the whole screen.
 // When the sidebar is open, prevent scrolling and use z-50 to ensure it is on top of everything else.
 function Navbar() {
-
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   const sideNavClicked = (): void => {
-    if(isSidebarOpen) {
+    if (isSidebarOpen) {
       setIsSidebarOpen(false);
       enablePageScroll();
     } else {
       setIsSidebarOpen(true);
       disablePageScroll();
     }
-  }
+  };
 
   // s
 
@@ -43,24 +42,69 @@ function Navbar() {
 
   return (
     <>
-        <div className={isSidebarOpen ? "hidden" : "top-0 sticky flex z-0 bg-aquamarine-blue text-white py-1 px-4"}>
-          <div className="sticky inset-x-0 flex md:items-center mx-auto w-full border-black">
-            {/* <h1 className="sm:hidden md:text-2xl w-full">Snowy Village</h1> */}
-            <ul className="hidden md:flex"> 
-              <li><Link to="/" className="hover:bg-blue-200 rounded-md p-4 transition ease-in-out delay-50 mr-1 duration-300">Home</Link></li>
-              <li><Link to="/menu" className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Menu</Link></li>
-              <li><Link to="/gallery" className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Gallery</Link></li>
-              <li><Link to="/contact" className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">Contact</Link></li>
-              <li><Link to="/aboutus" className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300">About Us</Link></li>
-            </ul>
+      <div
+        className={
+          isSidebarOpen
+            ? "hidden"
+            : "top-0 sticky flex z-0 bg-aquamarine-blue text-white py-1 px-4"
+        }
+      >
+        <div className="sticky inset-x-0 flex md:items-center mx-auto w-full border-black">
+          {/* <h1 className="sm:hidden md:text-2xl w-full">Snowy Village</h1> */}
+          <ul className="hidden md:flex">
+            <li>
+              <Link
+                to="/"
+                className="hover:bg-blue-200 rounded-md p-4 transition ease-in-out delay-50 mr-1 duration-300"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/menu"
+                className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300"
+              >
+                Menu
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/gallery"
+                className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300"
+              >
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contact"
+                className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300"
+              >
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/aboutus"
+                className="p-1 hover:bg-blue-200 rounded-md p-1 ease-in-out delay-50 mr-1 duration-300"
+              >
+                About Us
+              </Link>
+            </li>
+          </ul>
 
-            <div onClick={sideNavClicked} className="ml-auto md:hidden top-2 pr-0 justify-right right-1 z-0">
-              <AiOutlineMenu size={30}/>
-            </div>
+          <div
+            onClick={sideNavClicked}
+            className="ml-auto md:hidden top-2 pr-0 justify-right right-1 z-0"
+          >
+            <AiOutlineMenu size={30} />
           </div>
         </div>
-      
+      </div>
+
       <div className="sticky z-1 overflow-hidden top-0">
+
       <div className={`
           ${isSidebarOpen ? "sticky z-2  h-screen border-r-gray-900 bg-background-color mx-auto" : "hidden"}`}>
             
@@ -100,13 +144,18 @@ function Navbar() {
             </div> 
           })}
           </ul> */}
-       </div>
-       </div>
-       <div onClick={sideNavClicked} className={ isSidebarOpen ? "z-2 fixed top-0 right-2 md:hidden" : "hidden"}>
-          <IconContext.Provider value={{ color: "black" }}> 
-            <AiOutlineClose size={30}/>
-          </IconContext.Provider>
         </div>
+      </div>
+      <div
+        onClick={sideNavClicked}
+        className={
+          isSidebarOpen ? "z-2 fixed top-0 right-2 md:hidden" : "hidden"
+        }
+      >
+        <IconContext.Provider value={{ color: "black" }}>
+          <AiOutlineClose size={30} />
+        </IconContext.Provider>
+      </div>
     </>
   );
 }
