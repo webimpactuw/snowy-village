@@ -8,7 +8,11 @@ export default defineConfig({
     target: 'esnext',
     rollupOptions: {
       // https://rollupjs.org/configuration-options/
-      input: ["./src/main.tsx"]
+      input: [
+        "index.html",
+        "src/main.tsx",
+        "src/index.css",
+      ]
     },
   }
 })

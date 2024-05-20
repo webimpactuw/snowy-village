@@ -22,7 +22,8 @@
     "react-modal": "^3.16.1",
     "react-pro-sidebar": "^1.1.0",
     "react-responsive-carousel": "^3.2.23",
-    "sanity": "^3.40.0"
+    "sanity": "^3.40.0",
+    "styled-components": "^6.1.11"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

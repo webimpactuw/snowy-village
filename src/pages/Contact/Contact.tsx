@@ -32,15 +32,29 @@ export default function Contact() {
 
         <Header />  
 
-        {/* <div className="hero bg-base-200 bg-[url('/waves.png')]" style={{backgroundImage: 'url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)'}}>
-          <div className="hero-content text-center">
+
+
+        <div className="bg-header-pattern" style={{backgroundImage: "url('./waves.png')"}}>
+          <div className="text-center">
             <div className="max-w-md">
               <h1 className="text-5xl font-bold">Hello there</h1>
               <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
               <button className="btn btn-primary">Get Started</button>
             </div>
           </div>
-        </div>   */}
+        </div>  
+
+        <div>
+
+          Whatever header
+
+          <div
+            className=""
+          >
+
+          </div>
+
+        </div>
 
         <Link to={{
           pathname: '/contact/hiring' 
