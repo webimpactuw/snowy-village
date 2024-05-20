@@ -5,11 +5,11 @@ export default defineCliConfig({
     projectId: 'zh9hwpwm',
     dataset: 'production'
   },
-  vite: config => {
-    return {
-      build: {
-        target: 'exnext',
-      }
-    }
-  }
+  // vite: config => {
+  //   return {
+  //     build: {
+  //       target: 'exnext',
+  //     }
+  //   }
+  // }
 })
