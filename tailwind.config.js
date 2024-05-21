@@ -24,6 +24,9 @@ export default {
   plugins: [daisyui],
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'header-pattern': "url('/src/assets/header.png')",
+      }),
       colors: {
         "background-color": colorNames.ice_blue,
         "nav-color": colorNames.faded_blue,
