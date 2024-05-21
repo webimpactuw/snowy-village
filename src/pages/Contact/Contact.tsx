@@ -39,7 +39,7 @@ export default function Contact() {
               
               <div className="p-5 pb-0 text-sm md:text-lg md:pl-12">
 
-                <h1 className="text-bold">We're Hiring!</h1>
+                <h1 className="text-bold">WE'RE HIRING!</h1>
                 <p>Want to gain experience making amazing desert? The requirement are that... write something that you looking for as a employee. 
                   Qualities you look for so that qualify them to work at Snowy Village, 
                   this provides them a bit of knowledge to know what to look for.</p>
@@ -63,7 +63,7 @@ export default function Contact() {
         
             <div className="p-5 flex-row text-center md:text-justify md:pr-12">
 
-              <h1>Let's Collab! </h1>
+              <h1>LET'S COLLAB! </h1>
 
               <p>Something about Snowy Village that catch others to support the business. Write something that make Snowy village a great place to be partner with. 
                 How they can be benefit from collaboration</p>
