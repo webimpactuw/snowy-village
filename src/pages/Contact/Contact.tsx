@@ -63,7 +63,7 @@ export default function Contact() {
         
             <div className="p-5 flex-row text-center md:text-justify md:pr-12">
 
-              <h1>Let's Collab! </h1>
+              <h1>Let's Collab!</h1>
 
               <p>Something about Snowy Village that catch others to support the business. Write something that make Snowy village a great place to be partner with. 
                 How they can be benefit from collaboration</p>
