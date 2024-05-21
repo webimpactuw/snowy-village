@@ -19,7 +19,7 @@ const AboutHeader = () => {
             </div>
 
             <div className="flex-1">
-              <img src="src/assets/GalleryImages/cover.png" alt="image" className="w-full" />
+              <img src="src/pages/AboutUs/cover.png" alt="image" className="w-full" />
             </div>
           </div>
           <div className="mx-auto pb-10"></div>
