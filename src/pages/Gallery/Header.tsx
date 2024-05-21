@@ -1,4 +1,5 @@
-import Border from 'public/Border.png';
+import Border from 'Border.png';
+
 const Header = () => {
   return (
     <>
