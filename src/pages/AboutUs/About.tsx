@@ -8,7 +8,7 @@ export default function About() {
 
       <div className="container mx-auto flex flex-col-reverse md:flex-row">
         <div className="flex-1 lg:pr-40 sm:pt-10 md:pt-20 pb-20 px-10">
-          <img src="src/assets/GalleryImages/image 122.png" alt="About us" className="w-full" />
+          <img src="src/pages/AboutUs/image 122.png" alt="About us" className="w-full" />
         </div>
         <div className="flex-1">
           <div className="py-20">
@@ -48,7 +48,7 @@ export default function About() {
           </div>
 
           <div className="flex-1">
-            <img src="src/assets/GalleryImages/history.png" alt="image" />
+            <img src="src/pages/AboutUs/history.png" alt="image" />
           </div>
       </div>
     </div>
