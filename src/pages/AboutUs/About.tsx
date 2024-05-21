@@ -6,7 +6,6 @@ export default function About() {
     <AboutHeader/>
     <span id="team"/>
 
-
       <div className="container mx-auto flex flex-col-reverse md:flex-row">
         <div className="flex-1 lg:pl-20 sm:pt-10 md:pt-20 pb-20 px-10">
           <img src="src/assets/GalleryImages/image 122.png" alt="About us" className="w-full" />
@@ -21,6 +20,7 @@ export default function About() {
             <h2 className="text-center md:text-right text-sm font-light font-kumbh-sans text-dark-blue pb-20 md:pb-40">
               Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. We use only the best ingredients and we source them our from Japan. Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. Did you know? Snowy Village was founded in.
             </h2>
+
           </div>
         </div>
       </div>

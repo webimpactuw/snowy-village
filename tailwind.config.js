@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import daisyui from 'daisyui'
 
 const colorNames = {
   aquamarine_blue: "#00729D",
@@ -20,8 +21,12 @@ export default {
     "./src/pages/**/*.{html,js,ts,tsx}",
     "./src/components/**/*.{html,js,ts,tsx}",
   ],
+  plugins: [daisyui],
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'header-pattern': "url('/src/assets/header.png')",
+      }),
       colors: {
         "background-color": colorNames.ice_blue,
         "nav-color": colorNames.faded_blue,

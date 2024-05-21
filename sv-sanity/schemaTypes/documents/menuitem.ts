@@ -20,6 +20,16 @@ export default {
       name: 'type',
       title: 'Type',
       type: 'string',
+      options: {
+        list: [
+          {title: 'Bingsoo: Fruits', value: 'bingsoofruits'},
+          {title: 'Bingsoo: Classics', value: 'bingsooclassics'},
+          {title: 'Taiyaki: Sweet', value: 'taiyakisweet'},
+          {title: 'Taiyaki: Savory', value: 'taiyakisavory'},
+          {title: 'Drinks', value: 'drinks'},
+          {title: 'Add-ons', value: 'addons'},
+        ],
+      },
       validation: (Rule: {required: () => any}) => Rule.required(),
     },
     {
