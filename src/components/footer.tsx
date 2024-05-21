@@ -1,16 +1,16 @@
 const navigation = {
   main: [
-    { name: "About", href: "#" },
+    { name: "About", href: "#/aboutus/" },
     { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
+    { name: "Jobs", href: "#/contact/" },
     { name: "Press", href: "#" },
     { name: "Accessibility", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "Partners", href: "#/contact/" },
   ],
   social: [
     {
       name: "Facebook",
-      href: "#",
+      href: "https://www.facebook.com/snowyvillageuw/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -23,7 +23,7 @@ const navigation = {
     },
     {
       name: "Instagram",
-      href: "#",
+      href: "https://www.instagram.com/snowyvillagepnw/",
       icon: (props) => (
         <svg fill="currentColor" viewBox="0 0 24 24" {...props}>
           <path
@@ -104,7 +104,7 @@ export default function Example() {
           ))}
         </div>
         <p className="mt-10 text-center text-xs leading-5 text-gray-500">
-          &copy; 2020 Your Company, Inc. All rights reserved.
+          &copy; 2024 Snowy Village, Inc. All rights reserved.
         </p>
       </div>
     </footer>

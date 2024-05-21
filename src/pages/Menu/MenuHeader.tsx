@@ -8,7 +8,7 @@ export default function MenuHeader() {
   function MenuLink({ text }: { text: string }) {
     return (
       <a
-        href={`#${text}`}
+        href={`#/${text}`}
         className="text-[#bc9a6c] text-xs text-center tracking-wide font-semibold hover:underline basis-0 flex-grow"
       >
         {text}
