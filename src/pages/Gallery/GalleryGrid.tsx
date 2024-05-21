@@ -38,9 +38,9 @@ const GalleryGrid: React.FC<GalleryProps> = ({ images }) => {
   };
 
   return (
-    <div className="container mx-auto p-5">
+    <div className="container mx-auto p-5 sm:p-10">
       <div
-        className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4"
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
         onMouseLeave={() => isLargeScreen && setActiveIndex(null)} 
       >
         {images.map((image, index) => (

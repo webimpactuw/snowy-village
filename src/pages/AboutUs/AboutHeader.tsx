@@ -1,29 +1,29 @@
 const AboutHeader = () => {
   return (
     <>
-      <div>
-        <style>
-          @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
-        </style>
-      </div>
       <div style={{ backgroundColor: '#E8F4FF' }}>
-        <div className="mx-auto px-20 pt-20 text-left flex">
-          <div className="flex-1">
-            <div className="container mx-auto h-16 py-20">
-              <h1 className="text-text-color-1 font-fjalla-one font-bold text-center text-5xl" style={{ color: '#00729D' }}>
-                ABOUT US
-              </h1>
-           </div>
-            {/* <img src="src/assets/GalleryImages/border.png" alt="border" /> */}
-            <h2 style={{ fontFamily: "'Oooh Baby', cursive", color: '#00729D' }}>
-              from the village, made with care
-            </h2>
+        <div className="bg-[#E8F4FF]">
+          <div className="container mx-auto flex flex-col md:flex-row">
+
+            <div className="flex-1 pl-20 md:pl-40 pr-20 pt-10 md:pt-25 lg:pt-40 md:text-left text-center">
+              <div className="mx-auto h-16 pt-20 pb-20">
+                <h1 className="text-text-color-1 font-kumbh-sans font-bold text-center md:text-left text-5xl lg:text-7xl" style={{ color: '#00729D' }}>
+                  ABOUT US
+                </h1>
+              </div>
+              <div className="w-full md:w-3/4">
+                <h2 className="text-dark-blue font-kumbh-sans text-sm font-light">
+                  Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for.
+                </h2>
+              </div>
+            </div>
+
+            <div className="flex-1">
+              <img src="src/assets/GalleryImages/cover.png" alt="image" className="w-full" />
+            </div>
           </div>
-          <div className="flex-1">
-            <img src="src/assets/GalleryImages/DRIPPPPP-3.png" alt="image" />
-          </div>
+          <div className="mx-auto pb-10"></div>
         </div>
-        <div className="mx-auto text-center pb-20"></div>
       </div>
     </>
   )
