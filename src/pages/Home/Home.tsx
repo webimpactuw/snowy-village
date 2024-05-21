@@ -1,13 +1,12 @@
-// import SampleText from "../../components/SampleText";
-// import { FirstWave } from "./FirstWave"
-import EmailForm from "../../components/EmailForm";
-// import { IceBlueWave } from "./IceBlueWave"
 import LightBlueWave from "./LightBlueWave";
-import KidPicture from "./Kid.png";
-import SeveralBingsoos from "./SeveralBingsoos.png";
+
 import BeigeDownWave from "./BeigeDownWave";
 import BlueUpWave from "./BlueUpWave";
 import Locations from "./Locations";
+import History from "./History";
+import Hero from "./Hero";
+import Collab from "./Collab";
+import Menu from "./Menu";
 export default function Home() {
   return (
     <div className="">
@@ -42,48 +41,19 @@ export default function Home() {
         {/* <img src={SeveralBingsoos} className="col-start-2 w-300"/> */}
       </div>
 
-      <LightBlueWave />
+        <Locations />
 
-      <Locations />
+        <History />
 
-      <div className="pl-20 pr-20 flex bg-beige">
-        <div className="flex-start w-[40%] grow">
-          <img src={KidPicture} className="flex" />
-        </div>
+        <BlueUpWave />
+        <Collab />
 
-        <div className="mt-100 flex-end flex-shrink text-black mb-1 w-[50%]">
-          <h1 className="text-3xl md:text-4xl font-bold text-center">
-            OUR HISTORY
-          </h1>
+        <Menu />
 
-          <p className="text-right">
-            Did you know? Snowy Village was founded in 1945 by an amazing couple
-            of besties. Did you know? Snowy Village was founded in 1945 by an
-            amazing couple of besties. We use only the best ingredients and we
-            source them our from Japan. Did you know? Snowy Village was founded
-            in 1945 by an amazing couple of besties. Did you know? Snowy Village
-            was founded in.
-          </p>
+        <div>
+          <h1>OUR COMMUNITY</h1>
         </div>
       </div>
-
-      <div>
-        <BeigeDownWave />
-      </div>
-      <BlueUpWave />
-
-      <div className="p-20 mt-0 bg-light-blue">
-        <h1>INTERESTED IN WORKING WITH US?</h1>
-        <EmailForm />
-      </div>
-
-      <div>
-        <h1>BINGSOO, TAIYAKI, OR REFRESHING DRINKS?</h1>
-      </div>
-
-      <div>
-        <h1>OUR COMMUNITY</h1>
-      </div>
-    </div>
+    </>
   );
 }

@@ -43,14 +43,14 @@ export default {
         "sage-green": colorNames.sage_green,
         "dark-green": colorNames.dark_green,
         "dark-blue": colorNames.dark_blue,
-        "gold": colorNames.gold,
+        gold: colorNames.gold,
         "aquamarine-blue": colorNames.aquamarine_blue,
         beige: colorNames.beige,
       },
       fontFamily: {
         "fjalla-one": ["Fjalla One", "sans-serif"],
         "kumbh-sans": ["Kumbh Sans", "sans-serif"],
-        "sans": ["Kumbh Sans", "sans-serif"]
+        sans: ["Kumbh Sans", "sans-serif"],
       },
       fontSize: {
         "2xs": "0.625rem",
