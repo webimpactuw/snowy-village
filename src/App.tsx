@@ -26,7 +26,6 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/menu" element={<Menu />} />
 
-          <Route path="/history" element={<History />} />
           <Route path="/locations" element={<Locations />} />
           <Route path="*" element={<Home />} />
 
