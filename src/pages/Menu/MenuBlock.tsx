@@ -17,7 +17,7 @@ const addons: Array<SanityItemData> = await getMenuItems("addons");
 export function BingsooMenuBlock() {
   return (
     <div className="grid p-2 md:mb-6">
-      <span id="BINGSOO" className="block h-10 -mt-10 invisible" />
+      <span id="BINGSOO" className="block h-20 -mt-20 invisible" />
       <div className="flex flex-col md:flex-row w-11/12 md:w-3/4 m-auto md:justify-center md:gap-6">
         <div className="w-3/4 m-auto">
           <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
@@ -68,7 +68,7 @@ export function BingsooMenuBlock() {
 export function TaiyakiMenuBlock() {
   return (
     <div className="grid p-2 md:mb-6">
-      <span id="TAIYAKI" className="block h-10 -mt-10 invisible" />
+      <span id="TAIYAKI" className="block h-20 -mt-20 invisible" />
       <div className="flex flex-col md:flex-row-reverse w-11/12 md:w-3/4 m-auto md:justify-center md:gap-6">
         <div className="w-3/4 m-auto">
           <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
@@ -121,7 +121,7 @@ export function TaiyakiMenuBlock() {
 export function DrinksMenuBlock() {
   return (
     <div className="grid p-2 w-11/12 md:w-1/2 m-auto md:mb-6">
-      <span id="DRINKS" className="block h-10 -mt-10 invisible" />
+      <span id="DRINKS" className="block h-20 -mt-20 invisible" />
       <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
         DRINKS
       </h2>
@@ -163,7 +163,7 @@ export function DrinksMenuBlock() {
 export function AddonsMenuBlock() {
   return (
     <div className="grid p-2 w-11/12 md:w-1/2 m-auto md:mb-6">
-      <span id="ADDONS" className="block h-10 -mt-10 invisible" />
+      <span id="ADDONS" className="block h-20 -mt-20 invisible" />
       <h2 className="text-center tracking-wider text-4xl text-[#00729d]">
         ADD-ONS
       </h2>
