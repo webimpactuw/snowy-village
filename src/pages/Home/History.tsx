@@ -1,6 +1,6 @@
-import React from "react";
 import KidPicture from "./Kid.png";
 import HistoryVector from "./HistoryVector.png";
+import HistoryVector2 from "./history_vector_2.png";
 
 export default function History() {
   return (
@@ -15,7 +15,7 @@ export default function History() {
         }}
       >
         <div className="mx-auto max-w-7xl sm:grid sm:grid-cols-12 sm:gap-x-8 sm:px-8">
-          <div className="px-6 pb-40 pt-10 sm:pb-32 sm:col-span-7 sm:px-0 sm:pt-48 xl:col-span-6">
+          <div className="px-6 sm:pb-20 lg:pb-0 pt-10 sm:col-span-7 sm:px-0 sm:pt-48 xl:col-span-6">
             <div className="mx-auto max-w-2xl sm:mx-0">
               <h1 className="mt-32 text-4xl font-extrabold tracking-tight text-aquamarine-blue sm:mt-10 sm:text-6xl">
                 OUR HISTORY
@@ -35,15 +35,20 @@ export default function History() {
               </div>
             </div>
           </div>
-          <div className=" invisible sm:visible relative sm:col-span-5 sm:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0 flex items-center justify-center h-full">
+          <div className=" invisible sm:visible relative sm:col-span-5 sm:-mr-8 xl:absolute xl:inset-0 xl:left-1/2 xl:mr-0 flex items-center justify-center h-full md:my-20">
             <img
-              className="justify-self-center   w-52 sm:w-96"
+              className="justify-self-center w-52 sm:w-96"
               src={KidPicture}
               alt="kid picture"
             />
           </div>
         </div>
       </div>
+      <img
+        src={HistoryVector2}
+        alt=""
+        className="w-full invisible lg:visible"
+      />
     </div>
   );
 }
