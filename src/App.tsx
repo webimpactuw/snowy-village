@@ -1,7 +1,6 @@
 import Home from "./pages/Home/Home";
 import Gallery from "./pages/Gallery/Gallery";
 import Menu from "./pages/Menu/Menu";
-import History from "./pages/AboutUs/History";
 import Locations from "./pages/AboutUs/Locations";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
