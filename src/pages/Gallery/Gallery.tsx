@@ -1,35 +1,45 @@
+import React from 'react';
 import Header from './Header';
 import GalleryGrid from './GalleryGrid';
 
-const testURL = 'https://handletheheat.com/wp-content/uploads/2021/06/homemade-vanilla-ice-cream.jpg';
+import Image72 from './Image72.png';
+import Image80 from './Image80.png';
+import Image82 from './Image82.png';
+import Image106 from './Image106.png';
+import Image110 from './Image110.png';
+import Image142 from './Image142.png';
+import Image89 from './Image89.png';
+import Image107 from './Image107.png';
+import Image73 from './Image73.png';
+import Image96 from './Image96.png';
+import Image100 from './Image100.png';
 
 const images = [
-  { src: testURL, alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
-  { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
-  { src: testURL, alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
-  { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
-  { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
-  { src: testURL, alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
-  { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
-  { src: testURL, alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
-  { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
-  { src: testURL, alt: 'Description of image', caption: 'Strawberry' },
-
-
-
+  { src: Image72, className: "", alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
+  { src: Image80, alt: 'Description of image', caption: 'Strawberry' },
+  { src: Image82, alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
+  { src: Image106, alt: 'Description of image', caption: 'Strawberry' },
+  { src: Image110, alt: 'Description of image', caption: 'Strawberry' },
+  { src: Image142, alt: 'Description of image', caption: 'Strawberry' },
+  { src: Image89, alt: 'Description of image', caption: 'Strawberry' },
+  { src: Image107, alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
+  { src: Image73, alt: 'Description of image', caption: 'Strawberry' },
+  { src: Image96, alt: 'Description of image', caption: 'Strawberry' },
+  { src: Image100, alt: 'Description of image', caption: 'Strawberry' },
 ];
 
-function Gallery() {
+const Gallery: React.FC = () => {
   return (
     <>
-      <div className="bg-background-color">
+      <div className="bg-background-color" style={{ color: "#F0FAFF" }}>
         <Header />
       </div>
-      <div className='bg-white pb-20'>
+      
+      <div className='pb-20' style={{ color: "#FFFFFF" }}>
         <GalleryGrid images={images} />
       </div>
     </>
   );
-}
+};
 
 export default Gallery;

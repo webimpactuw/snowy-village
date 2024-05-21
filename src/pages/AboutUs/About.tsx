@@ -1,53 +1,58 @@
 import Locations from "./Locations";
-
-const testURL = 'https://www.betterup.com/hs-fs/hubfs/Happy-work-team-cheering-and-celebrating-at-meeting-team-collaboration.jpg?width=1928&height=1286&name=Happy-work-team-cheering-and-celebrating-at-meeting-team-collaboration.jpg';
+import AboutHeader from "./AboutHeader";
 
 export default function About() {
   return <>
-
+    <AboutHeader/>
     <span id="team"/>
-    <div className="mx-auto h-30 w-full pt-10 pb-10 bg-dark-blue">
-      <h1 className="text-text-color-2 font-fjalla-one text-3xl text-center">ABOUT US</h1>
-    </div>
 
-    <div className="mx-auto h-120 w-full md:px-20 sm:px-10 py-10 bg-white">
-      <div className=" bg-white pb-10">
-        <h1 className="text-dark-blue font-fjalla-one text-3xl text-center">OUR TEAM</h1>
-      </div>
-      
-      <div className=" bg-white pb-20">
-      <div className="flex flex-col md:flex-row w-full h-auto bg-white p-5">
-        <div className="flex-none w-full md:w-80 relative">
-          <div className="md:flex-none w-full md:w-80 h-48 relative">
-            <img src={testURL} alt="Team" className="absolute inset-0 w-full h-full object-cover" />
+      <div className="container mx-auto flex flex-col-reverse md:flex-row">
+        <div className="flex-1 lg:pr-40 sm:pt-10 md:pt-20 pb-20 px-10">
+          <img src="src/pages/AboutUs/image 122.png" alt="About us" className="w-full" />
+        </div>
+        <div className="flex-1">
+          <div className="py-20">
+            <h1 className="text-center md:text-right text-5xl lg:text-7xl font-bold font-kumbh-sans text-[#00729D] pb-4">
+              OUR TEAM
+            </h1>
+          </div>
+          <div className="w-3/4 md:w-full mx-auto md:ml-auto">
+            <h2 className="text-center md:text-right text-sm font-light font-kumbh-sans text-dark-blue pb-20 md:pb-40">
+              Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. We use only the best ingredients and we source them our from Japan. Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. Did you know? Snowy Village was founded in.
+            </h2>
+
           </div>
         </div>
-        <div className="flex-grow p-5" >
-          <p className="text-dark-blue font-fjalla-one-">Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team.</p>
-        </div>
       </div>
-      </div>
-    </div>
+
+
+    
     
     <span id="story"/>
-    <div className="mx-auto h-120 w-auto py-10 sm:px-10 md:px-20 bg-dark-blue">
-      <div className=" bg-dark-blue pb-10">
-        <h1 className="text-text-color-2 font-fjalla-one text-3xl text-center">OUR STORY</h1>
-      </div>
 
-      <div className=" bg-dark-blue pb-20">
-        <div className="flex flex-col md:flex-row w-full h-auto bg-dark-blue p-5">
-          <div className="flex-grow p-5" >
-            <p className="text-text-color-2 font-fjalla-one-">Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team. Write something about the team.</p>
-          </div>
-          <div className="flex-none w-full md:w-80 relative">
-            <div className="md:flex-none w-full md:w-80 h-48 relative">
-              <img src={testURL} alt="Team" className="absolute inset-0 w-full h-full object-cover" />
+    <div className="bg-[#E8F4FF]">
+    <div className="mx-auto flex flex-col md:flex-row">
+
+          <div className="flex-1 pl-20 md:pl-30 pr-20 pt-10 md:pt-25 lg:pt-40 md:text-left text-center">
+            <div className="mx-auto h-16 pt-20 pb-20">
+              <h1 className="font-kumbh-sans font-bold text-center md:text-left text-5xl lg:text-7xl" style={{ color: '#00729D' }}>
+                OUR HISTORY
+              </h1>
+            </div>
+
+            <div className="container w-full md:w-3/4">
+              <h2 className="text-dark-blue font-kumbh-sans text-sm font-light" >
+              Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. We use only the best ingredients and we source them our from Japan. Did you know? Snowy Village was founded in 1945 by an amazing couple of besties. Did you know? Snowy Village was founded in.
+              </h2>
             </div>
           </div>
-        </div>
+
+          <div className="flex-1">
+            <img src="src/pages/AboutUs/history.png" alt="image" />
+          </div>
       </div>
     </div>
+
 
     <span id="locations"/>
     <Locations />

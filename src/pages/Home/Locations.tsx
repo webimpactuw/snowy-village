@@ -54,7 +54,6 @@ export default function Locations() {
                 src={location.imageUrl}
                 alt={location.name}
               />
-
               <p className="text-sm leading-7 text-aquamarine-blue font-semibold text-center mt-4">
                 5264 University Way NE, Seattle, WA 98105
               </p>
