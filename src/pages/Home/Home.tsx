@@ -9,7 +9,7 @@ import Collab from "./Collab";
 import Menu from "./Menu";
 export default function Home() {
   return (
-    <div className="">
+    <div className="bg-beige">
       {/* <div className="p-20 grid grid-flow-col bg-ice-blue"> */}
 
       <div className="flex bg-light-blue items-center justify-items-center gap-40 pt-14">
@@ -35,25 +35,24 @@ export default function Home() {
         </div>
 
         {/* <div className="flex-end w-100"> */}
-        <img src={SeveralBingsoos} className="" />
+        {/* <img src={SeveralBingsoos} className="" /> */}
         {/* </div> */}
 
         {/* <img src={SeveralBingsoos} className="col-start-2 w-300"/> */}
       </div>
 
-        <Locations />
+      <Locations />
 
-        <History />
+      <History />
 
-        <BlueUpWave />
-        <Collab />
+      <BlueUpWave />
+      <Collab />
 
-        <Menu />
+      <Menu />
 
-        <div>
-          <h1>OUR COMMUNITY</h1>
-        </div>
+      <div>
+        <h1>OUR COMMUNITY</h1>
       </div>
-    </>
+    </div>
   );
 }
