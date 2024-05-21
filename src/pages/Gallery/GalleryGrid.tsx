@@ -45,7 +45,7 @@ const GalleryGrid: React.FC<GalleryProps> = ({ images }) => {
       >
         {images.map((image, index) => (
           <div
-            key={image.src}
+            key={index}
             className={`relative overflow-hidden rounded-lg cursor-pointer group ${getItemSpanClass(image)}`}
             onClick={() => !isLargeScreen && toggleCaption(index)}
             onMouseEnter={() => isLargeScreen && setActiveIndex(index)}
