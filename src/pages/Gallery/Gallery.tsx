@@ -2,17 +2,17 @@ import React from 'react';
 import Header from './Header';
 import GalleryGrid from './GalleryGrid';
 
-import Image72 from 'src/pages/Gallery/GalleryImages/Image72.png';
-import Image80 from 'src/pages/Gallery/GalleryImages/image80.png';
-import Image82 from 'src/pages/Gallery/GalleryImages/image82.png';
-import Image106 from 'src/pages/Gallery/GalleryImages/image106.png';
-import Image110 from 'src/pages/Gallery/GalleryImages/image110.png';
-import Image142 from 'src/pages/Gallery/GalleryImages/image142.png';
-import Image89 from 'src/pages/Gallery/GalleryImages/image89.png';
-import Image107 from 'src/pages/Gallery/GalleryImages/image107.png';
-import Image73 from 'src/pages/Gallery/GalleryImages/image73.png';
-import Image96 from 'src/pages/Gallery/GalleryImages/image96.png';
-import Image100 from 'src/pages/Gallery/GalleryImages/image100.png';
+import Image72 from './Image72.png';
+import Image80 from './Image80.png';
+import Image82 from './Image82.png';
+import Image106 from './Image106.png';
+import Image110 from './Image110.png';
+import Image142 from './Image142.png';
+import Image89 from './Image89.png';
+import Image107 from './Image107.png';
+import Image73 from './Image73.png';
+import Image96 from './Image96.png';
+import Image100 from './Image100.png';
 
 const images = [
   { src: Image72, alt: 'Description of image', caption: 'Strawberry', contentType: 'featured' },
