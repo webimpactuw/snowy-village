@@ -1,11 +1,38 @@
 const navigation = {
   main: [
-    { name: "About", href: "#/aboutus/" },
+    {
+      name: "About",
+      href: "#/aboutus/",
+      onclick: () =>
+        setTimeout(() => {
+          document
+            .querySelector("#about-top")
+            ?.scrollIntoView({ block: "start", behavior: "instant" });
+        }, 1),
+    },
     { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#/contact/" },
+    {
+      name: "Jobs",
+      href: "#/contact/",
+      onclick: () =>
+        setTimeout(() => {
+          document
+            .querySelector("#hiring")
+            ?.scrollIntoView({ block: "start", behavior: "instant" });
+        }, 1),
+    },
     { name: "Press", href: "#" },
     { name: "Accessibility", href: "#" },
-    { name: "Partners", href: "#/contact/" },
+    {
+      name: "Partners",
+      href: "#/contact/",
+      onclick: () =>
+        setTimeout(() => {
+          document
+            .querySelector("#collab")
+            ?.scrollIntoView({ block: "start", behavior: "instant" });
+        }, 1),
+    },
   ],
   social: [
     {
@@ -84,6 +111,7 @@ export default function Example() {
             <div key={item.name} className="pb-6">
               <a
                 href={item.href}
+                onClick={item.onclick ? item.onclick : () => {}}
                 className="text-sm leading-6 text-gray-600 hover:text-gray-900"
               >
                 {item.name}
