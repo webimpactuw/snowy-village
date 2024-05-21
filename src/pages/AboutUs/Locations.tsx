@@ -27,9 +27,9 @@ const locations: Array<SanityLocationData> = await getLocations();
 
 export default function Locations() {
   return (
-    <div className="bg-beige grid gap-6 p-4 pt-8">
-      <h1 className="text-center font-fjalla-one text-5xl tracking-wider text-dark-blue">
-        OUR LOCATIONS
+    <div className="bg-beige grid gap-6 p-4 pt-20">
+      <h1 className="text-center text-4xl md:text-5xl text-aquamarine-blue">
+        LOCATIONS
       </h1>
       {locations
         .sort((a, b) => a.priority - b.priority)
