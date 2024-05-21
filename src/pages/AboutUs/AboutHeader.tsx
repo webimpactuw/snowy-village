@@ -5,9 +5,9 @@ const AboutHeader = () => {
         <div className="bg-[#E8F4FF]">
           <div className="container mx-auto flex flex-col md:flex-row">
 
-            <div className="flex-1 pl-20 md:pl-40 pr-20 pt-10 md:pt-25 lg:pt-40 md:text-left text-center">
+            <div className="flex-1 pl-20 md:pl-30 pr-20 pt-10 md:pt-25 lg:pt-40 md:text-left text-center">
               <div className="mx-auto h-16 pt-20 pb-20">
-                <h1 className="text-text-color-1 font-kumbh-sans font-bold text-center md:text-left text-5xl lg:text-7xl" style={{ color: '#00729D' }}>
+                <h1 className="font-kumbh-sans font-bold text-center md:text-left text-5xl lg:text-7xl" style={{ color: '#00729D' }}>
                   ABOUT US
                 </h1>
               </div>
