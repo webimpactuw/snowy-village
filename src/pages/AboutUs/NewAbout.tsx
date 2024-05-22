@@ -5,10 +5,15 @@ import HistoryImage from "./history.png";
 
 export default function NewAbout() {
   return <>
-  
-    <div className="flex-col items-center bg-ice-blue">
-      <NewHeader />
 
+    <span id="team" className="block h-20 mt-20 invisible"/>
+
+    <div className="flex-col items-center bg-ice-blue">
+
+
+      
+      <NewHeader />
+      
       <div className="flex md:w-full flex-col md:pt-10 pb-10 md:pl-[20%] md:pr-[20%] md:p-8 bg-beige">
 
 
@@ -31,7 +36,8 @@ export default function NewAbout() {
         </div>
       </div>
 
-    
+      <span id="story" />
+
       <div className="flex md:w-full flex-col pb-10 md:pl-[20%] md:pr-[20%] md:p-8 bg-ice-blue">
 
 
@@ -62,7 +68,7 @@ export default function NewAbout() {
 
     </div>
   
-      
+    <span id="locations" />
     <Locations />
 
   </>

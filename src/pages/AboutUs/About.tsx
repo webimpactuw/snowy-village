@@ -4,8 +4,8 @@ import AboutHeader from "./AboutHeader";
 export default function About() {
   return <>
     <AboutHeader/>
-    <span id="team"/>
 
+    <span id="team"/>
       <div className="container mx-auto flex flex-col-reverse md:flex-row">
         <div className="flex-1 lg:pr-40 sm:pt-10 md:pt-20 pb-20 px-10">
           <img src="src/pages/AboutUs/image 122.png" alt="About us" className="w-full" />
@@ -29,7 +29,6 @@ export default function About() {
     
     
     <span id="story"/>
-
     <div className="bg-[#E8F4FF]">
     <div className="mx-auto flex flex-col md:flex-row">
 
@@ -52,7 +51,6 @@ export default function About() {
           </div>
       </div>
     </div>
-
 
     <span id="locations"/>
     <Locations />

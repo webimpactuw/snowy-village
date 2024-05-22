@@ -2,11 +2,6 @@ import HiringDots from "./HiringDots.png";
 import CollabDots from "./CollabDots.png";
 import Header from "./Header";
 import { Link } from "react-router-dom";
-// import WaveImage from "./waves.png";
-// import FaqImage1 from "./faq-1.png";
-// import FaqImage2 from "./faq-2.png";
-// import TrueImage from "./true.png";
-// import WaveComponent from "./WaveComponent";
 
 export default function Contact() {
 
