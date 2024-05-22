@@ -2,6 +2,7 @@ import HiringDots from "./HiringDots.png";
 import CollabDots from "./CollabDots.png";
 import Header from "./Header";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 // import WaveImage from "./waves.png";
 // import FaqImage1 from "./faq-1.png";
 // import FaqImage2 from "./faq-2.png";

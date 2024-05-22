@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { AiOutlineMenu } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 function NewNavbar() {
 
@@ -65,10 +66,10 @@ function NewNavbar() {
           <div className="collapse-content"> 
             <ul>
               <li onClick={() => sideNavClicked()}>
-              <Link to="/contact#hiring">Hiring </Link>
+              <HashLink smooth to="/contact/#hiring">Hiring</HashLink>
               </li>
               <li onClick={() => sideNavClicked()}>
-              <Link to="/contact#collab">Collab </Link>
+              <HashLink smooth to="/contact#collab">Collab </HashLink>
               </li>
             </ul>
 
@@ -84,15 +85,15 @@ function NewNavbar() {
           <div className="collapse-content"> 
             <ul>
               <li onClick={() => sideNavClicked()}>
-              <Link to="/aboutus#team">Team </Link>
+              <HashLink smooth to="/aboutus/#team">Team </HashLink>
               </li>
 
               <li onClick={() => sideNavClicked()}>
-              <Link to="/aboutus#story">Story</Link>
+              <HashLink smooth to="/aboutus/#story">Story</HashLink>
               </li>
 
               <li onClick={() => sideNavClicked()}>
-              <Link to="/aboutus#locations">Locations</Link>
+              <HashLink smooth to="/aboutus/#locations">Locations</HashLink>
               </li>
             </ul>
 
