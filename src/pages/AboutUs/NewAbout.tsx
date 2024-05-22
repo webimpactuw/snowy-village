@@ -6,7 +6,7 @@ import HistoryImage from "./history.png";
 export default function NewAbout() {
   return <>
 
-    <span id="team" className="block h-20 mt-20 invisible"/>
+    <span id="team"/>
 
     <div className="flex-col items-center bg-ice-blue">
 
