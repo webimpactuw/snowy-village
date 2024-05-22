@@ -55,7 +55,7 @@ export default function EmailForm() {
         <input
           type="text"
           placeholder="Name"
-          className="p-2 mb-4 border-2 rounded-xl w-full"
+          className="p-2 mb-4 border-2 rounded-xl w-full bg-[#FFFFFF]"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
@@ -63,14 +63,14 @@ export default function EmailForm() {
         <input
           type="email"
           placeholder="Email"
-          className="p-2 mb-4 border-2 rounded-xl w-full"
+          className="p-2 mb-4 border-2 rounded-xl w-full bg-[#FFFFFF]"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
 
         <textarea
           placeholder="Message"
-          className="p-2 mb-4 border-2 rounded-xl h-64 w-full"
+          className="p-2 mb-4 border-2 rounded-xl h-64 w-full bg-[#FFFFFF]"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
