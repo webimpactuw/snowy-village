@@ -26,9 +26,9 @@ function App() {
           <Route path="/" element={<Home />} />
 
           <Route path="/contact" element={<Contact />} />
-          <Route path="/contact#hiring" element={<Contact />} />
-          <Route path="/contact#faq" element={<Contact />} />
-          <Route path="/contact#collab" element={<Contact />} />
+          <Route path="/contact/#hiring" element={<Contact />} />
+          <Route path="/contact/#faq" element={<Contact />} />
+          <Route path="/contact/#collab" element={<Contact />} />
 
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/menu" element={<Menu />} />
@@ -37,9 +37,9 @@ function App() {
           <Route path="*" element={<Home />} />
 
           <Route path="/aboutus" element={<NewAbout />}/>
-          <Route path="/aboutus#team" element={<NewAbout />}/>
-          <Route path="/aboutus#story" element={<NewAbout />}/>
-          <Route path="/aboutus#locations" element={<NewAbout />}/>
+          <Route path="/aboutus/#team" element={<NewAbout />}/>
+          <Route path="/aboutus/#story" element={<NewAbout />}/>
+          <Route path="/aboutus/#locations" element={<NewAbout />}/>
         </Routes>
       </div>
 
