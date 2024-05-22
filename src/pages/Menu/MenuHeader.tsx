@@ -1,5 +1,6 @@
 import React from "react";
 import Modal from "react-modal";
+import { HashLink } from "react-router-hash-link";
 
 export default function MenuHeader() {
   function DividerBar() {
@@ -7,12 +8,11 @@ export default function MenuHeader() {
   }
   function MenuLink({ text }: { text: string }) {
     return (
-      <a
-        href={`#${text}`}
-        className="text-[#bc9a6c] text-xs text-center tracking-wide font-semibold hover:underline basis-0 flex-grow"
-      >
-        {text}
-      </a>
+      <p className="text-[#bc9a6c] text-xs text-center tracking-wide font-semibold hover:underline basis-0 flex-grow">
+        <HashLink smooth to={`/menu/#${text}`}>
+          {text}
+        </HashLink>
+      </p>
     );
   }
   function UnderlineSVG() {
