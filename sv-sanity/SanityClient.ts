@@ -8,6 +8,11 @@ export const client = createClient({
   apiVersion: '2022-03-07',
 })
 
+export async function getFaqItems() {
+  const items = await client.fetch(`*[_type ==  "faqitem"]`)
+  return items
+}
+
 export async function getMenuItems(type: string) {
   const items = await client.fetch(`*[_type == "menuitem" && type == "${type}"]`)
   return items

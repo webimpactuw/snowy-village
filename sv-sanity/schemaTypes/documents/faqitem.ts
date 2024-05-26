@@ -1,22 +1,26 @@
-import {validation} from 'sanity'
+import {validation, defineField, defineType } from 'sanity'
 
-export default {
+export const faqitem = defineType({
   name: 'faqitem',
-  title: 'FAQs',
+  title: 'FAQ Items',
   type: 'document',
 
   fields: [
-    {
+    
+    defineField({
       name: 'question',
       title: 'Question',
       type: 'string',
       validation: (Rule: {required: () => any}) => Rule.required(),
-    },
-    {
+    }),
+    
+    defineField({
       name: 'answer',
       title: 'Answer',
       type: 'string',
       validation: (Rule: {required: () => any}) => Rule.required(),
-    },
+    }),
   ]
-}
+})
+
+export default faqitem;

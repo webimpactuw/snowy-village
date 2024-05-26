@@ -2,6 +2,7 @@ import HiringDots from "./HiringDots.png";
 import CollabDots from "./CollabDots.png";
 import Header from "./Header";
 import { Link } from "react-router-dom";
+import FAQs from "./FAQs";
 
 export default function Contact() {
 
@@ -73,38 +74,7 @@ export default function Contact() {
       </div>
 
       <span id="faq"/>
-      <div className="flex-col hero w-full p-5 pt-10 bg-beige md:pl-[20%] md:pr-[20%] md:p-8 text-center">
+      <FAQs />
 
-          <div className="hero-content flex-col">
-
-            <div className="flex-col">
-              <h1>FAQ's</h1>
-
-              <p className="text-sm md:text-lg">Having questions about our village? The following are questions that get asked most.</p>
-
-              <button className="btn md:btn-lg bg-aquamarine-blue rounded-full font-bold text-white mx-auto p-3 text-md hover:bg-green-600 mt-4">Read more..</button>
-
-              <div tabIndex={0} className="collapse collapse-arrow bg-ice-blue mt-5 outline outline-blue-300">
-              <input type="checkbox" name="my-accordion-1" defaultChecked/> 
-                <div className="collapse-title text-xl font-medium">
-                  Click to open this one and close others
-                </div>
-                <div className="collapse-content"> 
-                  <p>hello</p>
-                </div>
-              </div>
-
-              <div className="collapse collapse-arrow outline outline-blue-300 bg-ice-blue mt-5">
-                <input type="checkbox" name="my-accordion-1" /> 
-                <div className="collapse-title text-xl font-medium">
-                  Click to open this one and close others
-                </div>
-                <div className="collapse-content"> 
-                  <p>hello</p>
-                </div>
-              </div>
-          </div>
-      </div>
-    </div>
   </>
 }
