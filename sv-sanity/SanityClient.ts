@@ -28,3 +28,24 @@ const urlBuilder = imageUrlBuilder(client)
 export function urlFor(source: any) {
   return urlBuilder.image(source)
 }
+
+export const fetchGallery = async () => {
+  const query = `*[_type == "gallery"]{
+    src {
+      asset->{
+        _id,
+        url
+      }
+    },
+    alt,
+    caption,
+    contentType
+  }`;
+  const images = await client.fetch(query);
+  return images.map(img => ({
+    src: img.src.asset.url,
+    alt: img.alt,
+    caption: img.caption,
+    contentType: img.contentType,
+  }));
+}
