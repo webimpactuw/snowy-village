@@ -1,13 +1,37 @@
-// export default {
-//     name: 'gallery',
-//     title: 'Gallery',
-//     type: 'document',
-//     // fields: [{
-//         title: 'image src',
-//         name: 'src',
-//         type: 'string',
-//         validation: rule => rule.required()
-//     }
-
-//     ]
-// }
+export default {
+    name: 'galleryImage',
+    title: 'Gallery Image',
+    type: 'document',
+    fields: [
+      {
+        name: 'src',
+        title: 'Image',
+        type: 'image',
+        options: {
+          hotspot: true
+        }
+      },
+      {
+        name: 'alt',
+        title: 'Alternative Text',
+        type: 'string',
+      },
+      {
+        name: 'caption',
+        title: 'Caption',
+        type: 'string',
+      },
+      {
+        name: 'contentType',
+        title: 'Content Type',
+        type: 'string',
+        options: {
+          list: [
+            { title: 'Featured', value: 'featured' },
+          ],
+          layout: 'radio'
+        }
+      }
+    ]
+  };
+  

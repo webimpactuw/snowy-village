@@ -14,8 +14,12 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
+    "@sanity/base": "^2.36.2",
     "@sanity/cli": "^3.42.1",
     "@sanity/client": "^6.17.0",
+    "@sanity/default-layout": "^2.36.2",
+    "@sanity/default-login": "^2.36.2",
+    "@sanity/desk-tool": "^2.36.2",
     "@sanity/image-url": "^1.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

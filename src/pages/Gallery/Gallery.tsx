@@ -35,7 +35,7 @@ const Gallery: React.FC = () => {
         <Header />
       </div>
       
-      <div className='pb-20' style={{ color: "#FFFFFF" }}>
+      <div className='pb-20 bg-text-color-2'>
         <GalleryGrid images={images} />
       </div>
     </>
