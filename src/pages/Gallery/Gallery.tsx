@@ -1,7 +1,42 @@
 import React, {useState, useEffect} from 'react';
 import Header from './Header';
 import GalleryGrid from './GalleryGrid';
-import fetchGallery from './sv-sanity/SanityClient';
+import { fetchGallery } from "../../../sv-sanity/SanityClient";
+
+interface SanityGalleryImageData {
+  _id: string;
+  src: {
+    asset: {
+      _id: string;
+      url: string;
+    };
+  };
+  alt: string;
+  caption?: string;
+  contentType: string;
+}
+
+const Gallery: React.FC = () => {
+  const [images, setImages] = useState<SanityGalleryImageData[]>([]);
+
+  useEffect(() => {
+    fetchGallery().then(setImages);
+  }, []);
+
+  return (
+    <>
+      <div className="bg-background-color" style={{ color: "#F0FAFF" }}>
+        <Header />
+      </div>
+      
+      <div className='pb-20 bg-text-color-2'>
+        <GalleryGrid images={images} />
+      </div>
+    </>
+  );
+};
+
+export default Gallery;
 
 // import Image72 from './Image72.png';
 // import Image80 from './Image80.png';
@@ -28,25 +63,3 @@ import fetchGallery from './sv-sanity/SanityClient';
 //   { src: Image96, alt: 'Description of image', caption: 'Strawberry' },
 //   { src: Image100, alt: 'Description of image', caption: 'Strawberry' },
 // ];
-
-const Gallery: React.FC = () => {
-  const [images, setImages] = useState([]);
-
-  useEffect(() => {
-    fetchGallery().then(setImages);
-  }, []);
-
-  return (
-    <>
-      <div className="bg-background-color" style={{ color: "#F0FAFF" }}>
-        <Header />
-      </div>
-      
-      <div className='pb-20 bg-text-color-2'>
-        <GalleryGrid images={images} />
-      </div>
-    </>
-  );
-};
-
-export default Gallery;

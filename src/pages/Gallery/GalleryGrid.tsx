@@ -1,17 +1,24 @@
 import React, { useState, useEffect } from 'react';
 
-interface Image {
-  src: string;
+interface SanityGalleryImageData {
+  _id: string;
+  src: {
+    asset: {
+      _id: string;
+      url: string;
+    };
+  };
   alt: string;
   caption?: string;
-  contentType?: string;
+  contentType: string;
 }
+
 
 interface GalleryProps {
-  images: Image[];
+  images: SanityGalleryImageData[];
 }
 
-const getItemSpanClass = (image: Image) => {
+const getItemSpanClass = (image: SanityGalleryImageData) => {
   if (image.contentType === 'featured') {
     return 'md:col-span-2 lg:col-span-2 row-span-2';
   } else {
@@ -51,7 +58,7 @@ const GalleryGrid: React.FC<GalleryProps> = ({ images }) => {
             onMouseEnter={() => isLargeScreen && setActiveIndex(index)}
           >
             <img
-              src={image.src}
+              src={image.src.asset.url}
               alt={image.alt}
               className="w-full h-full object-cover transform transition duration-300 ease-in-out"
               style={{
